@@ -1,0 +1,345 @@
+/*rough 
+
+*/
+
+/*------------------------------------------- CSS ------------------------------------------*/
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.container {
+    border: solid brown;
+    text-align: center;
+    padding-bottom: 0px;
+}
+
+/* Global Styling */
+.nav__list {
+    list-style: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+.button {
+    width: 220.45px;
+    height: 66px;
+    background-color: red;
+    border: none;
+    color: white;
+    border-radius: 27.5px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.section__title {
+    color: #3F9CA3;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.section__subtitle {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.makeItCenter {
+    text-align: center;
+}
+p {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: none;
+}
+.logo {
+    width: 63.93px;
+}
+.content__wrap {
+    width: 1000px;
+    margin: 0px auto;
+}
+.nav__item {
+    padding: 25px;
+    color: white;
+}
+.move__down {
+    position: relative;
+    top: 705px;
+}
+.content__wrap {
+    z-index: 13;
+    width: 90%;
+    padding: 0px;
+    padding-top: 118px;
+    padding-bottom: 118px;
+}
+
+/* ------------------------------------ HEADER ----------------------------------- */
+header {
+    width: 100%;
+    height: 70px;
+    background-color: #353535;
+    position: sticky;
+    top: 0px;
+    z-index: 12;
+}
+.content__wrap--header {
+    height: 100%;
+    padding: 0px;
+}
+.container--logo {
+    height: 100%;
+    float: left;
+    display: table;
+}
+.logo--header {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+.nav--header {
+    float: right;
+    height: 100%;
+}
+.nav__item__ach--header {
+    height: 100%;
+    display: table;
+    float: left;
+}
+.nav__item__ach--header:last-child {
+    padding-right: 0px;
+}
+.nav__item--header {
+    display: table-cell;
+    vertical-align: middle;
+}
+.nav__item__ach:hover{
+    text-decoration: underline red solid  2px;
+    text-underline-offset: 5px;
+}
+
+
+/* ------------------------------------ BODY ------------------------------------ */
+/* -------------------- HERO ------------------ */
+.hero {
+    width: 100%;
+    background-color: #D6E5DC;
+    z-index: 2;
+    height: 700px;
+    position: fixed;
+    margin: 0px;
+    padding: 0px;
+}
+.content__wrap--hero {
+    padding-top: 200px;
+}
+.section__title--hero {
+    font-size: 105px;
+    line-height: 132px;
+    line-height: 73px;
+    margin-bottom: 33px;
+    margin-top: 0px;
+}
+.section__subtitle--hero {
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 142.69%;
+    margin-left: 5px;
+    line-height: 23px;
+    margin-bottom: 74px;
+}
+.hero__button {
+    margin-top: 50px;
+    font-size: 28px;
+    padding-top: 12px;
+    padding-bottom: 15.29px;
+    padding-left: 40px;
+    padding-right: 43.07px;
+    position: relative;
+    margin-left: 5px;
+}
+.hero__button:hover {
+    background-color: white;
+    color: red;
+    border: red solid 1px;
+}
+/* -------------------- About Me ------------------ */
+.about {
+    background-color: white;
+    position: relative;
+    z-index: 5;
+    border: solid red;
+}
+.content__wrap--about {
+    width: 60%;
+}
+.section__title--about {
+    text-align: center;
+    font-size: 65px;  
+    line-height: 45px;
+}
+.about__body p {
+    margin-top: 81px;
+    font-size: 28px;
+    text-align: left;
+    font-weight: 400;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+/* -------------------- Projects ------------------ */
+.projects {
+    z-index: 5;
+    background-color: #EAEAEA;
+    color: black;
+}
+.grid__container--projects {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: end;
+    column-gap: 107px;
+}
+.heading--projects {
+    font-size: 65px;
+    text-decoration: underline red;
+    text-underline-offset: 22px;
+    line-height: 75px;
+}
+.image--projects {
+    width: 503px;
+    margin-top: 52px;
+}
+.project__description {
+    margin-top: 44px;
+    font-size: 28px;
+}
+.project {
+    display: grid;
+    place-items: center;
+}
+
+/* -------------------- Contact ------------------ */
+.contact {
+    background-color: #EAB543;
+    position: relative;
+    z-index: 5;
+    padding: 0px;
+    margin: 0px;
+}
+.section__title--contact {
+    font-size: 65px;
+    margin-top: 255px;
+    text-align: center;
+    color: black;
+    margin-bottom: 8.03px;
+    margin-top: 0px;
+    line-height: 45px;
+}
+.message--contact {
+    font-size: 28px;
+    text-align: center;
+    margin-top: 10px;
+    line-height: 30px;
+}
+.form--contact {
+    margin-top: 81px;
+}
+::placeholder {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.form__input--contact {
+    margin-top: 46.5px;
+    height: 91.98px;
+    width: 769.91px;
+    font-size: 24px;
+    padding-left: 22.45px ;
+    
+}
+.form__input1--contact {
+    margin-top: 0px;
+}
+.form__input4--contact {
+    height: 288.74px;
+    padding-top: 27.76px;
+    resize: none;
+}
+.button--contact {
+    margin-top: 43px;
+    background-color: #2977C9;
+    font-size: 28px;
+}
+.button--contact:hover{
+    background-color: white;
+    color: blue;
+    border: solid blue 1px;
+}
+.message__privacy {
+    text-align: center;
+    margin-top: 4.97px;
+    line-height: 1;
+    margin: 0px;
+    padding: 0px;
+}
+.fa-solid{
+    font-size: 12px;
+    position: relative;
+    bottom: .5px;
+    right: 2px;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+
+/* ----------------------------------- FOOTER ----------------------------------- */
+/* footer {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #353535;
+    z-index: 3;
+}
+
+.content__wrap--footer {
+    height: 100%;
+    width: 90%;
+    z-index: 4;
+}
+.nav--footer {
+    justify-content: center;
+    display:flex;
+    padding-top: 58px;
+    margin-bottom: 142.72px;
+}
+.nav__item--footer {
+    padding: 0px 20px;
+    color: white;
+}
+.container--logo--footer {
+    margin: 0px auto;
+    display: table;
+    vertical-align: middle;
+} */
+footer {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-color: #353535;
+    z-index: 5;
+    text-align: center;
+}
+.nav--footer {
+    display: flex;
+    justify-content: center;
+}
+.logo--footer {
+    margin-top: 142.72px;
+}
+/* -------------------- CREDITS ------------------ */
+.credits {
+    background-color: #EEEBE4;
+    font-size: 10px;
+    text-align: center;
+    border-top: 1px solid #FFFFFF;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+
