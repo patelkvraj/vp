@@ -79,7 +79,6 @@ header {
     position: sticky;
     top: 0px;
     z-index: 12;
-    background-color: blue;
 }
 .content__wrap--header {
     height: 100%;
