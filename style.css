@@ -50,6 +50,10 @@ body {
 .section__title {
     color: #3F9CA3;
     font-family: 'Source Sans Pro', sans-serif;
+    font-weight: normal;
+    font-size: 65px;
+    text-align: center;
+    line-height: 45px;
 }
 .section__subtitle {
     font-family: 'Source Sans Pro', sans-serif;
@@ -83,7 +87,6 @@ p {
     padding-top: 118px;
     padding-bottom: 118px;
 }
-
 /* ------------------------------------ HEADER ----------------------------------- */
 header {
     width: 100%;
@@ -92,6 +95,7 @@ header {
     position: sticky;
     top: 0px;
     z-index: 12;
+    overflow: hidden;
 }
 .content__wrap--header {
     height: 100%;
@@ -149,6 +153,7 @@ header {
     line-height: 73px;
     margin-bottom: 33px;
     margin-top: 0px;
+    text-align: left;
 }
 .section__subtitle--hero {
     font-size: 36px;
@@ -183,8 +188,6 @@ header {
     width: 60%;
 }
 .section__title--about {
-    text-align: center;
-    font-size: 65px;  
     line-height: 45px;
 }
 .about__body p {
@@ -202,30 +205,71 @@ header {
     background-color: #EAEAEA;
     color: black;
 }
-.grid__container--projects {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: end;
-    column-gap: 107px;
+.heading--projects {
+    font-weight: normal;
+    font-size: 36px;
+    text-underline-offset: 22px;
+    color: black;
+    font-weight: 400;
+}
+.project__description {
+    margin-top: 35px;
+    font-size: 28px;
+    float: left;
+    display: inline;
+    border-top: solid black 1px;
+    padding-top: 60px;
+    padding-right: 60px;
+}
+.flex__container__inner--projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    border-right: solid black 1px;
+}
+.flex__container__outer--projects {
+    display: flex;
+    margin-top: 104px;
+    column-gap: 100px;
+    justify-content: center;
+    align-items: center;
+    /* border: solid gainsboro; */
+}
+.image--projects {
+    width: 303px;
+    margin: auto 0px;
+    border-radius: 75px;
+    border: solid white 5px;
+}
+/* .grid__container--projects {
+    margin-top: 81px;
+    display: flex;
+    flex-direction: column;
+    border: solid red;
 }
 .heading--projects {
-    font-size: 65px;
+    margin-top: 54px;
+    font-weight: normal;
+    font-size: 48px;
     text-decoration: underline red;
     text-underline-offset: 22px;
-    line-height: 75px;
+}
+.achOne--projects {
+    border: solid green;  
 }
 .image--projects {
     width: 503px;
     margin-top: 52px;
+    float: right;
+    border: solid red;
 }
 .project__description {
     margin-top: 44px;
     font-size: 28px;
-}
-.project {
-    display: grid;
-    place-items: center;
-}
+    float: left;
+    display: inline;
+} */
 
 /* -------------------- Contact ------------------ */
 .contact {
@@ -236,13 +280,10 @@ header {
     margin: 0px;
 }
 .section__title--contact {
-    font-size: 65px;
     margin-top: 255px;
-    text-align: center;
     color: black;
     margin-bottom: 8.03px;
     margin-top: 0px;
-    line-height: 45px;
 }
 .message--contact {
     font-size: 28px;
@@ -301,34 +342,6 @@ header {
 
 
 /* ----------------------------------- FOOTER ----------------------------------- */
-/* footer {
-    position: relative;
-    width: 100%;
-    height: 500px;
-    background-color: #353535;
-    z-index: 3;
-}
-
-.content__wrap--footer {
-    height: 100%;
-    width: 90%;
-    z-index: 4;
-}
-.nav--footer {
-    justify-content: center;
-    display:flex;
-    padding-top: 58px;
-    margin-bottom: 142.72px;
-}
-.nav__item--footer {
-    padding: 0px 20px;
-    color: white;
-}
-.container--logo--footer {
-    margin: 0px auto;
-    display: table;
-    vertical-align: middle;
-} */
 footer {
     position: relative;
     width: 100%;
