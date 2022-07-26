@@ -32,7 +32,7 @@
                     <img class="logo logo--header" src="C:\Users\vraj1\OneDrive\Documents\Programming\Mywork\HTML\Projects\Vraj-Patel\Logo\logo-VP.svg" width="100px">
                 </div>
                 <!--Navigation Panel-->
-                <ul class="navig nav--header">
+                <ul class="nav nav--header">
                     <a class="nav__item__ach nav__item__ach--header" href="#projects"><li class="nav__item nav__item--header">Projects</li></a>
                     <a class="nav__item__ach nav__item__ach--header" href="#about"><li class="nav__item nav__item--header">About</li></a>
                     <a class="nav__item__ach nav__item__ach--header" href="#contact"><li class="nav__item nav__item--header">Contact</li></a>
@@ -42,7 +42,7 @@
 
         <!-------------------------------------- BODY -------------------------------------->
         <!---------------------- HERO -------------------->
-        <section class="hero" id="home">
+        <section class="section hero" id="home">
             <div class="content__wrap content__wrap--hero">
                 <h1 class="section__title section__title--hero">Hi, I'm <strong>Vraj Patel</strong>!</h1>
                 <h5 class="section__subtitle section__subtitle--hero">Software Developer</h5> 
@@ -50,7 +50,7 @@
             </div>
         </section>
         <!---------------------- About me -------------------->
-        <section class="about move__down"  id="about">
+        <section class="section about move__down"  id="about">
             <div class="content__wrap content__wrap--about">
                 <h1 class="section__title section__title--about">This is me</h1>
                 <div class="about__body">
@@ -68,36 +68,61 @@
         </section>
 
         <!---------------------- Projects -------------------->
-        <section class="projects move__down" id="projects">
+        <section class="section projects move__down" id="projects">
             <div class="content__wrap content__wrap--projects">
                 <h1 class="section__title section__title--projects">Projects</h1>
-                <!--Still Shine-->
-                <div class="project projectTwo">
+                <!--Vraj Patel-->
+                <div class="project project__vrajPatel">
                     <div class="flex__container__outer--projects">
                         <div class="flex__container__inner--projects">
-                            <a class="heading--projects project__name__ach--projects" href="https://www.figma.com/proto/eazgTOxZDza1JIiwGmiU1N/Still-Shine-web-design?page-id=0%3A1&node-id=102%3A3&viewport=1219%2C318%2C0.05&scaling=scale-down&starting-point-node-id=328%3A475&show-proto-sidebar=1" target="_blank">Still Shine</a>
+                            <a class="heading--projects project__name__ach--projects" href="https://patelkvraj.github.io/vp/" target="_blank">Vraj Patel</a>
                             <p class="project__description project__one__description"> 
-                                It is a prototype of a website that sells used item. The website is Still Shine. 
+                                It is a personal website that contains my works and information. 
     
-                                <br><br><strong>Key tools used: </strong>Figma.
-                                <br><br><strong>Key accomplishments: </strong>Got interested in web design/development. Learned to create a prototype of a website.
+                                <br><br><strong>Key tools used: </strong>CSS, HTML, Figma.
+                                <br><br><strong>Key accomplishments: </strong>Created first every mega project.
+                                <br><br><a class="github__vrajPatel" href="https://github.com/patelkvraj/vp" target="_blank">
+                                    See source code
+                                </a>
                             </p>
                         </div>
-                        <a class="project__image__ach--projects" href="https://www.figma.com/proto/eazgTOxZDza1JIiwGmiU1N/Still-Shine-web-design?page-id=0%3A1&node-id=102%3A3&viewport=1219%2C318%2C0.05&scaling=scale-down&starting-point-node-id=328%3A475&show-proto-sidebar=1" target="_blank"><img class="image--projects" src="photos/Still-Shine.jpg"></a>                        
+                        <a class="project__image__ach--projects" href="https://patelkvraj.github.io/vp/" target="_blank">
+                            <img class="image--projects" src="photos/Vraj-Patel.jpg">
+                        </a>                        
+                    </div>
+                </div>                
+                <!--Still Shine-->
+                <div class="project project__stillShine">
+                    <div class="flex__container__outer--projects">
+                        <div class="flex__container__inner--projects">
+                            <a class="heading--projects project__name__ach--projects" href="https://www.figma.com/proto/eazgTOxZDza1JIiwGmiU1N/Still-Shine-web-design?page-id=0%3A1&node-id=102%3A3&viewport=1219%2C318%2C0.05&scaling=scale-down&starting-point-node-id=328%3A475&show-proto-sidebar=1" target="_blank">
+                                Still Shine
+                            </a>
+                            <p class="project__description project__one__description"> 
+                                It is a prototype of a website that sells used items.  
+    
+                                <br><br><strong>Key tools used: </strong>Figma.
+                                <br><br><strong>Key accomplishments: </strong>Got interested in web design/development. Learned to create a prototype of a website. 
+                            </p>
+                        </div>
+                        <a class="project__image__ach--projects" href="https://www.figma.com/proto/eazgTOxZDza1JIiwGmiU1N/Still-Shine-web-design?page-id=0%3A1&node-id=102%3A3&viewport=1219%2C318%2C0.05&scaling=scale-down&starting-point-node-id=328%3A475&show-proto-sidebar=1" target="_blank">
+                            <img class="image--projects" src="photos/Still-Shine.jpg">
+                        </a>                        
                     </div>
                 </div>
                 <!--Touchy-->
-                <div class="project projectOne">
+                <div class="project project__touchy">
                     <div class="flex__container__outer--projects">
                         <div class="flex__container__inner--projects">
                             <a class="heading--projects project__name__ach--projects" href="https://trinket.io/glowscript/d8806aa273?e=1 " target="_blank">Touchy</a>
                             <p class="project__description project__one__description"> 
-                                I programmed this small game during my senior year. It was my beginning of my programming journey. 
-                                The program was a final project. We had to create a game using the concepts we had learned so far. 
-                                We have to programmed in python language. The coding environment we were using was trinket. 
+                                I programmed this small game during my senior year of high school. 
+                                It was the beginning of my programming journey. We had to create a game 
+                                using the concepts learned in the class. I wrote the program 
+                                in Python, and the coding environment was Trinket.
     
                                 <br><br><strong>Key tools used: </strong>Python, Trinket.
-                                <br><br><strong>Key accomplishments: </strong>Got interested in programming. Learned all the basic concepts of programming (i.e., loops, if/else, etc….).
+                                <br><br><strong>Key accomplishments: </strong>Got interested in programming. Created first ever computer game. Learned all the basic concepts of programming (i.e., loops, if/else, etc….)
                             </p>
                         </div>
                         <a class="project__image__ach--projects" href="https://trinket.io/glowscript/d8806aa273?e=1 " target="_blank"><img class="image--projects" src="photos/touchy.jpg"></a>                        
@@ -107,8 +132,10 @@
         </section>
 
         <!---------------------- Contact -------------------->
-        <section class="contact move__down"  id="contact">
+        <section class="section contact move__down"  id="contact">
             <div class="content__wrap content__wrap--contact">
+                <p class="note note--contact"><i class="fa-solid fa-triangle-exclamation"></i><strong>The service is currently unavailable. I am still working on it. Sorry for the inconvenience.</strong></p>
+                <i class="fa-solid fa-envelope email__icon"></i>        <!--email icon-->
                 <h1 class="section__title section__title--contact">Connect With Me</h1>
                 <p class="message--contact">Simply leave a message and I’ll get right back to you. </p>
                 <div class="makeItCenter">
@@ -118,7 +145,7 @@
                         <input class="form__input--contact form__input3--contact" placeholder="Email address*" type="email" required> <br>
                         <textarea class="form__input--contact form__input4--contact" placeholder="Your Message*" required></textarea> 
                         <div class="makeItCenter"><button class="button button--contact">Submit</button></div>              
-                        <p class="message__privacy"><i class="fa-solid fa-lock"></i>We never share your private data.</p>
+                        <p class="message__privacy"><i class="fa-solid fa-lock lock__icon"></i><!--lock icon-->We never share your private data.</p>
                     </form>
                 </div>
             </div>
@@ -127,21 +154,20 @@
 
          <!------------------------------------- FOOTER ------------------------------------->  
          <footer class="footer move__down">
-            <!--Navigation Panel-->
-            <ul class="nav nav--footer">
-                <a class="nav__item__ach nav__item__ach--header" href="#projects"><li class="nav__item nav__item--header">Projects</li></a>
-                <a class="nav__item__ach nav__item__ach--footer" href="#about"><li class="nav__item nav__item--footer nav__item__first--footer">About</li></a>
-                <a class="nav__item__ach nav__item__ach--footer" href="#contact"><li class="nav__item nav__item--footer nav__item__second--footer">Contact</li></a>
-            </ul>
-            <!-- Logo -->
-            <div class="container--logo--footer">
-                <img class="logo logo--footer" src="C:\Users\vraj1\OneDrive\Documents\Programming\Mywork\HTML\Projects\Vraj-Patel\Logo\logo-VP.svg" width="100px">
+            <div class="content__wrap content__wrap--footer">
+                <!--Navigation Panel-->
+                <ul class="nav nav--footer">
+                    <a class="nav__item__ach nav__item__ach--footer" href="#projects"><li class="nav__item nav__item--footer">Projects</li></a>
+                    <a class="nav__item__ach nav__item__ach--footer" href="#about"><li class="nav__item nav__item--footer nav__item__first--footer">About</li></a>
+                    <a class="nav__item__ach nav__item__ach--footer" href="#contact"><li class="nav__item nav__item--footer nav__item__second--footer">Contact</li></a>
+                </ul>
+                <!-- Logo -->
+                <div class="container--logo--footer">
+                    <img class="logo logo--footer" src="C:\Users\vraj1\OneDrive\Documents\Programming\Mywork\HTML\Projects\Vraj-Patel\Logo\logo-VP.svg" width="100px">
+                </div>
             </div>
+            <!-- Copyright Notice -->
+            <div class="message copyright"><i class="fa-solid fa-copyright"></i> 2022 Vraj Patel. All rights reserved.</div>
          </footer>
-         
-         
-         <!---------------------- CREDITS -------------------->
-         <div class="credits">Privacy policy</div>
     </body>
-
 </html>

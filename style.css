@@ -1,21 +1,3 @@
-/*rough 
-        <header class="header">
-            <div class="content__wrap content__wrap--header">
-                <!-- Logo -->
-                <div class="container--logo">
-                    <img class="logo logo--header" src="C:\Users\vraj1\OneDrive\Documents\Programming\Mywork\HTML\Projects\Vraj-Patel\Logo\logo-VP.svg" width="100px">
-                </div>
-                <!--Navigation Panel-->
-                <ul class="nav nav--header">
-                    <a class="nav__item__ach nav__item__ach--header" href="#projects"><li class="nav__item nav__item--header">Projects</li></a>
-                    <a class="nav__item__ach nav__item__ach--header" href="#about"><li class="nav__item nav__item--header">About</li></a>
-                    <a class="nav__item__ach nav__item__ach--header" href="#contact"><li class="nav__item nav__item--header">Contact</li></a>
-                </ul>
-            </div>
-        </header>
-*/
-
-/*------------------------------------------- CSS ------------------------------------------*/
 * {
     margin: 0px;
     padding: 0px;
@@ -23,20 +5,16 @@
     text-decoration: none;
 }
 body {
-    margin: 0px;
-    padding: 0px;
     font-family: 'Ubuntu', sans-serif;
 }
-.container {
-    border: solid brown;
-    text-align: center;
-    padding-bottom: 0px;
-}
 
-/* Global Styling */
+/* ------------------------------------------- GLOBAL STYLING -------------------------------------------- */
 .nav__list {
     list-style: none;
     font-family: 'Ubuntu', sans-serif;
+}
+.nav__item {
+    color: white;
 }
 .button {
     width: 220.45px;
@@ -58,6 +36,10 @@ body {
 .section__subtitle {
     font-family: 'Source Sans Pro', sans-serif;
 }
+.section {
+    padding-top: 118px;
+    padding-bottom: 118px;
+}
 .makeItCenter {
     text-align: center;
 }
@@ -69,23 +51,13 @@ p {
     width: 63.93px;
 }
 .content__wrap {
-    width: 1000px;
     margin: 0px auto;
-}
-.nav__item {
-    padding: 25px;
-    color: white;
+    width: 90%;
+    text-align: center;
 }
 .move__down {
     position: relative;
-    top: 705px;
-}
-.content__wrap {
-    z-index: 13;
-    width: 90%;
-    padding: 0px;
-    padding-top: 118px;
-    padding-bottom: 118px;
+    top: 697px;
 }
 /* ------------------------------------ HEADER ----------------------------------- */
 header {
@@ -94,10 +66,11 @@ header {
     background-color: #353535;
     position: sticky;
     top: 0px;
-    z-index: 12;
+    z-index: 1;
     overflow: hidden;
 }
 .content__wrap--header {
+    text-align: left;
     height: 100%;
     padding: 0px;
 }
@@ -119,17 +92,18 @@ header {
     height: 100%;
     display: table;
     float: left;
+    padding: 0px 20px;
 }
-.nav__item__ach--header:last-child {
-    padding-right: 0px;
+.nav__item__ach:hover{
+    text-decoration: underline red solid  2px;
+    text-underline-offset: 5px;
 }
 .nav__item--header {
     display: table-cell;
     vertical-align: middle;
 }
-.nav__item__ach:hover{
-    text-decoration: underline red solid  2px;
-    text-underline-offset: 5px;
+.nav__item__ach--header:last-child {
+    padding-right: 0px;
 }
 
 
@@ -138,14 +112,14 @@ header {
 .hero {
     width: 100%;
     background-color: #D6E5DC;
-    z-index: 2;
-    height: 700px;
     position: fixed;
-    margin: 0px;
-    padding: 0px;
+    padding-top: 218px;
+    padding-bottom: 218px;
 }
 .content__wrap--hero {
-    padding-top: 200px;
+    height: 100%;
+    text-align: left;
+    padding-bottom: 14px;
 }
 .section__title--hero {
     font-size: 105px;
@@ -178,11 +152,11 @@ header {
     color: red;
     border: red solid 1px;
 }
+
+
 /* -------------------- About Me ------------------ */
 .about {
     background-color: white;
-    position: relative;
-    z-index: 5;
 }
 .content__wrap--about {
     width: 60%;
@@ -195,31 +169,37 @@ header {
     font-size: 28px;
     text-align: left;
     font-weight: 400;
-    margin-bottom: 0px;
-    padding-bottom: 0px;
 }
+
 
 /* -------------------- Projects ------------------ */
 .projects {
-    z-index: 5;
     background-color: #EAEAEA;
     color: black;
+}
+.content__wrap--projects {
+    text-align: left;
 }
 .heading--projects {
     font-weight: normal;
     font-size: 36px;
-    text-underline-offset: 22px;
     color: black;
-    font-weight: 400;
+    line-height: 37px;
 }
 .project__description {
     margin-top: 35px;
     font-size: 28px;
     float: left;
-    display: inline;
     border-top: solid black 1px;
     padding-top: 60px;
     padding-right: 60px;
+}
+.project__description strong {
+    font-weight: normal;
+}
+.github__vrajPatel {
+    text-decoration: underline 1px red;
+    text-underline-offset: 2px;
 }
 .flex__container__inner--projects {
     display: flex;
@@ -234,68 +214,33 @@ header {
     column-gap: 100px;
     justify-content: center;
     align-items: center;
-    /* border: solid gainsboro; */
 }
 .image--projects {
-    width: 303px;
+    width: 503px;
     margin: auto 0px;
     border-radius: 75px;
     border: solid white 5px;
 }
-/* .grid__container--projects {
-    margin-top: 81px;
-    display: flex;
-    flex-direction: column;
-    border: solid red;
-}
-.heading--projects {
-    margin-top: 54px;
-    font-weight: normal;
-    font-size: 48px;
-    text-decoration: underline red;
-    text-underline-offset: 22px;
-}
-.achOne--projects {
-    border: solid green;  
-}
-.image--projects {
-    width: 503px;
-    margin-top: 52px;
-    float: right;
-    border: solid red;
-}
-.project__description {
-    margin-top: 44px;
-    font-size: 28px;
-    float: left;
-    display: inline;
-} */
+
 
 /* -------------------- Contact ------------------ */
 .contact {
     background-color: #EAB543;
     position: relative;
-    z-index: 5;
-    padding: 0px;
-    margin: 0px;
+}
+.note--contact {
+    color: red;
 }
 .section__title--contact {
-    margin-top: 255px;
     color: black;
     margin-bottom: 8.03px;
-    margin-top: 0px;
 }
 .message--contact {
     font-size: 28px;
-    text-align: center;
-    margin-top: 10px;
     line-height: 30px;
 }
 .form--contact {
     margin-top: 81px;
-}
-::placeholder {
-    font-family: 'Source Sans Pro', sans-serif;
 }
 .form__input--contact {
     margin-top: 46.5px;
@@ -303,7 +248,6 @@ header {
     width: 769.91px;
     font-size: 24px;
     padding-left: 22.45px ;
-    
 }
 .form__input1--contact {
     margin-top: 0px;
@@ -312,6 +256,9 @@ header {
     height: 288.74px;
     padding-top: 27.76px;
     resize: none;
+}
+::placeholder {
+    font-family: 'Source Sans Pro', sans-serif;
 }
 .button--contact {
     margin-top: 43px;
@@ -323,32 +270,31 @@ header {
     color: blue;
     border: solid blue 1px;
 }
-.message__privacy {
-    text-align: center;
-    margin-top: 4.97px;
-    line-height: 1;
-    margin: 0px;
-    padding: 0px;
-}
-.fa-solid{
+.lock__icon{
     font-size: 12px;
     position: relative;
     bottom: .5px;
     right: 2px;
-    margin: 0px;
-    padding: 0px;
-}
 
+}
+.message__privacy {
+    text-align: center;
+    margin-top: 4.97px;
+    margin: 0px;
+}
+/*PROBLEM: the selctor can't be place on the top.*/
+.email__icon {
+    font-size: 100px;
+}
 
 
 /* ----------------------------------- FOOTER ----------------------------------- */
 footer {
-    position: relative;
     width: 100%;
-    height: 500px;
     background-color: #353535;
-    z-index: 5;
+    z-index: 15;
     text-align: center;
+    overflow: hidden;
 }
 .nav--footer {
     display: flex;
@@ -357,14 +303,20 @@ footer {
 .logo--footer {
     margin-top: 142.72px;
 }
+.nav__item--footer {
+    padding: 25px;
+}
+
+
 /* -------------------- CREDITS ------------------ */
-.credits {
-    background-color: #EEEBE4;
+.copyright {
     font-size: 10px;
     text-align: center;
     border-top: 1px solid #FFFFFF;
     padding-top: 2px;
     padding-bottom: 2px;
+    color: white;
+    margin-top: 199px;
 }
 
 
