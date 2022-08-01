@@ -9,10 +9,6 @@ body {
 }
 
 /* ------------------------------------------- GLOBAL STYLING -------------------------------------------- */
-.nav__list {
-    list-style: none;
-    font-family: 'Ubuntu', sans-serif;
-}
 .nav__item {
     color: white;
 }
@@ -31,7 +27,7 @@ body {
     font-weight: normal;
     font-size: 65px;
     text-align: center;
-    line-height: 45px;
+    line-height: 76px;
 }
 .section__subtitle {
     font-family: 'Source Sans Pro', sans-serif;
@@ -39,9 +35,6 @@ body {
 .section {
     padding-top: 118px;
     padding-bottom: 118px;
-}
-.makeItCenter {
-    text-align: center;
 }
 p {
     font-family: 'Source Sans Pro', sans-serif;
@@ -52,7 +45,7 @@ p {
 }
 .content__wrap {
     margin: 0px auto;
-    width: 90%;
+    width: 80%;
     text-align: center;
 }
 .move__down {
@@ -70,9 +63,8 @@ header {
     overflow: hidden;
 }
 .content__wrap--header {
-    text-align: left;
     height: 100%;
-    padding: 0px;
+    width: 90%;
 }
 .container--logo {
     height: 100%;
@@ -85,6 +77,9 @@ header {
     vertical-align: middle;
 }
 .nav--header {
+    height: 100%;
+}
+.nav__list--header {
     float: right;
     height: 100%;
 }
@@ -92,7 +87,7 @@ header {
     height: 100%;
     display: table;
     float: left;
-    padding: 0px 20px;
+    padding: 0px 25px;
 }
 .nav__item__ach:hover{
     text-decoration: underline red solid  2px;
@@ -113,8 +108,8 @@ header {
     width: 100%;
     background-color: #D6E5DC;
     position: fixed;
-    padding-top: 218px;
-    padding-bottom: 218px;
+    padding-top: 198px;
+    padding-bottom: 198px;
 }
 .content__wrap--hero {
     height: 100%;
@@ -123,22 +118,21 @@ header {
 }
 .section__title--hero {
     font-size: 105px;
-    line-height: 132px;
-    line-height: 73px;
-    margin-bottom: 33px;
-    margin-top: 0px;
+    line-height: 116px;
+    padding: 0px;
+    margin: 0px;
     text-align: left;
 }
 .section__subtitle--hero {
     font-size: 36px;
     font-weight: bold;
-    line-height: 142.69%;
     margin-left: 5px;
-    line-height: 23px;
-    margin-bottom: 74px;
+    line-height: 38px;
+    margin-bottom: 81px;
 }
+/*PROBLEM: margin-top does not work alone. It needs margin-bottom in previous element.*/
 .hero__button {
-    margin-top: 50px;
+    margin-top: 81px;
     font-size: 28px;
     padding-top: 12px;
     padding-bottom: 15.29px;
@@ -158,12 +152,6 @@ header {
 .about {
     background-color: white;
 }
-.content__wrap--about {
-    width: 60%;
-}
-.section__title--about {
-    line-height: 45px;
-}
 .about__body p {
     margin-top: 81px;
     font-size: 28px;
@@ -180,19 +168,20 @@ header {
 .content__wrap--projects {
     text-align: left;
 }
+.project {
+    margin-top: 81px;
+}
 .heading--projects {
     font-weight: normal;
     font-size: 36px;
     color: black;
-    line-height: 37px;
+    line-height: 38px;
 }
 .project__description {
-    margin-top: 35px;
+    margin-top: 40.5px;
     font-size: 28px;
     float: left;
     border-top: solid black 1px;
-    padding-top: 60px;
-    padding-right: 60px;
 }
 .project__description strong {
     font-weight: normal;
@@ -205,20 +194,18 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 70%;
+    width: 80%;
     border-right: solid black 1px;
 }
 .flex__container__outer--projects {
     display: flex;
-    margin-top: 104px;
-    column-gap: 100px;
-    justify-content: center;
+    column-gap: 50px;
+    justify-content: right;
     align-items: center;
 }
 .image--projects {
     width: 503px;
-    margin: auto 0px;
-    border-radius: 75px;
+    border-radius: 100px;
     border: solid white 5px;
 }
 
@@ -241,6 +228,7 @@ header {
 }
 .form--contact {
     margin-top: 81px;
+    text-align: center;
 }
 .form__input--contact {
     margin-top: 46.5px;
@@ -261,6 +249,8 @@ header {
     font-family: 'Source Sans Pro', sans-serif;
 }
 .button--contact {
+    display: block;
+    margin: 0px auto;
     margin-top: 43px;
     background-color: #2977C9;
     font-size: 28px;
@@ -287,21 +277,23 @@ header {
     font-size: 100px;
 }
 
-
+/*PROBLEM: Footer does not matches with the figma.*/
 /* ----------------------------------- FOOTER ----------------------------------- */
 footer {
     width: 100%;
     background-color: #353535;
-    z-index: 15;
     text-align: center;
     overflow: hidden;
 }
 .nav--footer {
+    padding: 0px;
+}
+.nav__list--footer {
     display: flex;
     justify-content: center;
 }
 .logo--footer {
-    margin-top: 142.72px;
+    margin-top: 153px;
 }
 .nav__item--footer {
     padding: 25px;
@@ -311,10 +303,9 @@ footer {
 /* -------------------- CREDITS ------------------ */
 .copyright {
     font-size: 10px;
-    text-align: center;
     border-top: 1px solid #FFFFFF;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    padding-top: 4px;
+    padding-bottom: 3px;
     color: white;
     margin-top: 199px;
 }
