@@ -2,10 +2,15 @@
 <!-- created by Vraj Patel -->
 <!-- created on 06/13/2022 -->
 
+<!--            Storage
+    TO DO: text
+    PROBLEM: text.
+-->
+
+
 <!--
                         GitHub Repositories (alternative)
         DATE                          COMMIT                       
-
 -->
 
 
@@ -16,9 +21,14 @@
     <head>
         <meta charset="utf-8">
         <title>VrajPatel Portfolio Website</title>
-        <link rel="stylesheet" href="style.css">                                                    <!--CSS file-->
-        <script src="https://kit.fontawesome.com/771d1fbba5.js" crossorigin="anonymous"></script>   <!--FONT-->
-        <link rel="preconnect" href="https://fonts.googleapis.com">                                 <!--FONT-->
+        <!-- CSS file -->
+        <link rel="stylesheet" href="style.css">         
+        
+        <!-- FONT -->
+        <script src="https://kit.fontawesome.com/771d1fbba5.js" crossorigin="anonymous"></script>   
+        
+        <!-- FONT -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">                                 
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,700;1,700&family=Ubuntu&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet"> 
     </head>
@@ -30,7 +40,7 @@
             <div class="content__wrap content__wrap--header">
                 <!-- Logo -->
                 <div class="container--logo" role="logo">
-                    <img class="logo logo--header" src="Photos/logo-VP.svg" width="100px">
+                    <img class="logo logo--header" src="Photos/logo-VP.svg" width="100px" alt="Logo of the website.">
                 </div>
                 <!-- Navigation Panel -->
                 <nav class="nav nav--header">
@@ -46,10 +56,12 @@
 
         <!-------------------------------------- BODY -------------------------------------->
         <!---------------------- HERO -------------------->
+        <!-- TO DO: Change the size of the hero's background.  -->
         <section class="section hero" id="home">
             <div class="content__wrap content__wrap--hero">
                 <h1 class="section__title section__title--hero">Hi, I'm <strong>Vraj Patel</strong>!</h1>
-                <h5 class="section__subtitle section__subtitle--hero" id="changeMe">Software Developer</h5> 
+                <h5 class="section__subtitle section__subtitle--hero">Front End Developer</h5>
+                <h6 class=" text text__langExp--hero">HTML: Time period <!-- / CSS: Time period / JavaScript: Time period --></h6> 
                 <a class="button hero__button" href="#contact" role="button">HIRE ME!</a>
             </div>
         </section>
@@ -79,7 +91,7 @@
                 <div class="project project__vrajPatel">
                     <div class="flex__container__outer--projects">
                         <div class="flex__container__inner--projects">
-                            <a class="heading--projects project__name__ach--projects" href="https://patelkvraj.github.io/vp/" target="_blank">Vraj Patel</a>
+                            <a class="heading--projects project__name__ach--projects" href="https://patelkvraj.github.io/vp/" target="_blank" aria-label="Heading of the project.">Vraj Patel</a>
                             <p class="project__description project__one__description"> 
                                 It is a personal website that contains my works and information. 
     
@@ -99,7 +111,7 @@
                 <div class="project project__stillShine">
                     <div class="flex__container__outer--projects">
                         <div class="flex__container__inner--projects">
-                            <a class="heading--projects project__name__ach--projects" href="https://www.figma.com/proto/eazgTOxZDza1JIiwGmiU1N/Still-Shine-web-design?page-id=0%3A1&node-id=102%3A3&viewport=1219%2C318%2C0.05&scaling=scale-down&starting-point-node-id=328%3A475&show-proto-sidebar=1" target="_blank">
+                            <a class="heading--projects project__name__ach--projects" href="https://www.figma.com/proto/eazgTOxZDza1JIiwGmiU1N/Still-Shine-web-design?page-id=0%3A1&node-id=102%3A3&viewport=1219%2C318%2C0.05&scaling=scale-down&starting-point-node-id=328%3A475&show-proto-sidebar=1" target="_blank" aria-label="Heading of the project.">
                                 Still Shine
                             </a>
                             <p class="project__description project__one__description"> 
@@ -118,7 +130,7 @@
                 <div class="project project__touchy">
                     <div class="flex__container__outer--projects">
                         <div class="flex__container__inner--projects">
-                            <a class="heading--projects project__name__ach--projects" href="https://trinket.io/glowscript/d8806aa273?e=1 " target="_blank">Touchy</a>
+                            <a class="heading--projects project__name__ach--projects" href="https://trinket.io/glowscript/d8806aa273?e=1 " target="_blank" aria-label="Heading of the project.">Touchy</a>
                             <p class="project__description project__one__description"> 
                                 I programmed this small game during my senior year of high school. 
                                 It was the beginning of my programming journey. We had to create a game 
@@ -140,17 +152,40 @@
         <!---------------------- Contact -------------------->
         <section class="section contact move__down"  id="contact">
             <div class="content__wrap content__wrap--contact">
-                <p class="note note--contact"><i class="fa-solid fa-triangle-exclamation"></i><strong>The service is currently unavailable. I am still working on it. Sorry for the inconvenience.</strong></p>
+                <p class="note note--contact"></p>
                 <i class="fa-solid fa-envelope email__icon"></i>        <!--email icon-->
                 <h1 class="section__title section__title--contact">Connect With Me</h1>
                 <p class="message--contact">Simply leave a message and I’ll get right back to you. </p>
                 <div>
                     <form class="form--contact">
-                        <input class="form__input--contact form__input1--contact" placeholder="Full name*" type="text" required> <br> 
-                        <input class="form__input--contact form__input2--contact" placeholder="Phone number" type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10"> <br>
-                        <input class="form__input--contact form__input3--contact" placeholder="Email address*" type="email" required> <br>
-                        <textarea class="form__input--contact form__input4--contact" placeholder="Your Message*" required></textarea> 
-                        <button class="button button--contact">Submit</button>                      
+                        <label class="form__label"> <!-- label 1 -->
+                            <div class="text--label--form">
+                                Full name
+                            </div>
+                            <input aria-label="Full name" class="form__input--contact form__input1--contact" placeholder="Full name*" type="text" required><br> 
+                        </label>
+
+                        <label class="form__label"> <!-- label 2 -->
+                            <div class="text--label--form">
+                                Phone number
+                            </div>
+                            <input class="form__input--contact form__input2--contact" placeholder="Phone number" type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10"> <br>
+                        </label>
+
+                        <label class="form__label"> <!-- label 3 -->
+                            <div class="text--label--form">
+                                Email address
+                            </div>
+                            <input class="form__input--contact form__input3--contact" placeholder="Email address*" type="email" required> <br>
+                        </label>
+
+                        <label class="form__label"> <!-- label 4 -->
+                            <div class="text--label--form">
+                                Your Message
+                            </div>
+                            <textarea class="form__input--contact form__input4--contact" placeholder="Your Message*" required></textarea> 
+                        </label>                        
+                        <button class="button button--contact" onclick="giveAlert()">Submit</button>     
                         <p class="message__privacy"><i class="fa-solid fa-lock lock__icon"></i><!--lock icon-->We never share your private data.</p>
                     </form>
                 </div>
