@@ -27,8 +27,11 @@ const start__html = new Date();
 const current__html = new Date();
 start__html.setUTCMonth(2); // started learning html in February 2022
 
+// if (current__html == 12)
+
+
 /* HTML Experience calculation */
-var exp__html = current__html.getUTCMonth() - start__html.getUTCMonth(); // Current month - Month started learning html 
+var exp__html = (1 + current__html.getUTCMonth()) - start__html.getUTCMonth(); // Current month - Month started learning html 
 
 document.getElementById("html__langExp--hero").innerHTML = exp__html;
 
@@ -38,7 +41,7 @@ const current__css = new Date();
 start__css.setUTCMonth(2); // started learning html in February 2022
 
 /* HTML Experience calculation */
-var exp__html = current__css.getUTCMonth() - start__css.getUTCMonth(); // Current month - Month started learning html 
+var exp__html = (1 + current__css.getUTCMonth()) - start__css.getUTCMonth(); // Current month - Month started learning html 
 
 document.getElementById("css__langExp--hero").innerHTML = exp__html;
 
@@ -48,7 +51,7 @@ const current__javaScript = new Date();
 start__javaScript.setUTCMonth(7); // started learning html in February 2022
 
 /* HTML Experience calculation */
-var exp__html = current__javaScript.getUTCMonth() - start__javaScript.getUTCMonth(); // Current month - Month started learning html 
+var exp__html = (1 + current__javaScript.getUTCMonth()) - start__javaScript.getUTCMonth(); // Current month - Month started learning html 
 
 document.getElementById("javaScript__langExp--hero").innerHTML = exp__html;
 
