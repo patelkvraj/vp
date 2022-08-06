@@ -50,7 +50,7 @@ p {
 }
 .move__down {
     position: relative;
-    top: 697px;
+    top: 747px;
 }
 .text {
     font-family: 'Source Sans Pro', sans-serif;
@@ -117,7 +117,7 @@ header {
 .content__wrap--hero {
     height: 100%;
     text-align: left;
-    padding-bottom: 14px;
+    padding-bottom: 32px;
 }
 .section__title--hero {
     font-size: 105px;
