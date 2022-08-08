@@ -247,8 +247,8 @@ header {
 }
 .form__input--contact {
     margin-top: 46.5px;
-    height: 91.98px;
-    width: 769.91px;
+    height: 70px;
+    width: 600px;
     font-size: 24px;
     padding-left: 22.45px ;
 }
@@ -256,7 +256,7 @@ header {
     margin-top: 0px;
 }
 .form__input4--contact {
-    height: 288.74px;
+    height: 250px;
     padding-top: 27.76px;
     resize: none;
 }
