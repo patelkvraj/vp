@@ -60,6 +60,7 @@
         <section class="section hero" id="home">
             <div class="content__wrap content__wrap--hero">
                 <h1 class="section__title section__title--hero">Hi, I'm <strong>Vraj Patel</strong>!</h1>
+                <!-- TO DO: Add a transition. Typing one char by char "Software Developer"  -->
                 <h5 class="section__subtitle section__subtitle--hero">Software Developer</h5>
                 <h6 class=" text langExp--hero">
                     HTML: <span id="html__langExp--hero">Time</span> months
@@ -166,7 +167,7 @@
                             <div class="text--label--form">
                                 Full name
                             </div>
-                            <input aria-label="Full name" class="form__input--contact form__input1--contact" placeholder="Full name*" type="text" required><br> 
+                            <input aria-label="Full name" class="form__input--contact form__input1--contact" placeholder="Full name" type="text" required><br> 
                         </label>
 
                         <label class="form__label"> <!-- label 2 -->
@@ -190,7 +191,9 @@
                             <textarea class="form__input--contact form__input4--contact" placeholder="Your Message*" required></textarea> 
                         </label>                        
                         <button class="button button--contact" onclick="giveAlert()">Submit</button>     
-                        <p class="message__privacy"><i class="fa-solid fa-lock lock__icon"></i><!--lock icon-->We never share your private data.</p>
+                        <p class="message__privacy">
+                            <i class="fa-solid fa-lock lock__icon"></i><!--lock icon-->We never share your private data.
+                        </p>
                     </form>
                 </div>
             </div>

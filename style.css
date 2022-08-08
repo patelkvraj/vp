@@ -51,7 +51,7 @@ p {
 }
 .move__down {
     position: relative;
-    top: 747px;
+    top: 646px;
 }
 .text {
     font-family: 'Source Sans Pro', sans-serif;
@@ -108,12 +108,13 @@ header {
 
 /* ------------------------------------ BODY ------------------------------------ */
 /* -------------------- HERO ------------------ */
+/*PROBLEM 1: Border conflict between about me while zooming in and out.*/
 .hero {
     width: 100%;
     background-color: #D6E5DC;
     position: fixed;
-    padding-top: 198px;
-    padding-bottom: 198px;
+    padding-top: 148px;
+    padding-bottom: 148px;
 }
 .content__wrap--hero {
     height: 100%;
@@ -163,7 +164,7 @@ header {
     background-color: white;
 }
 .about__body p {
-    margin-top: 81px;
+    margin-top: 44px;
     font-size: 28px;
     text-align: left;
     font-weight: 400;
@@ -179,7 +180,7 @@ header {
     text-align: left;
 }
 .project {
-    margin-top: 81px;
+    margin-top: 44px;
 }
 .heading--projects {
     font-weight: normal;
@@ -225,8 +226,9 @@ header {
     background-color: #EAB543;
     position: relative;
 }
-.note--contact {
-    color: red;
+/*PROBLEM 1: top and bottom padding can't be remove.*/
+.email__icon {
+    font-size: 100px;
 }
 .section__title--contact {
     color: black;
@@ -238,7 +240,7 @@ header {
     margin-top: 4px;
 }
 .form--contact {
-    margin-top: 81px;
+    margin-top: 44px;
     text-align: center;
 }
 .text--label--form {
@@ -285,11 +287,6 @@ header {
     text-align: center;
     margin-top: 4px;
     margin: 0px;
-}
-/*PROBLEM 1: the selctor can't be place on the top.*/
-/*PROBLEM 2: top and bottom padding can't be remove.*/
-.email__icon {
-    font-size: 100px;
 }
 
 /*PROBLEM: Footer does not matches with the figma.*/
