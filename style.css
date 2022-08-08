@@ -25,9 +25,10 @@ body {
     color: #3F9CA3;
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
-    font-size: 65px;
+    font-size: 48px;
     text-align: center;
-    line-height: 76px;
+    line-height: 56.5px;
+    font-weight: 400px;
 }
 .section__subtitle {
     font-family: 'Source Sans Pro', sans-serif;
@@ -229,11 +230,12 @@ header {
 }
 .section__title--contact {
     color: black;
-    margin-bottom: 8.03px;
+    margin-top: 4px;
 }
 .message--contact {
-    font-size: 28px;
-    line-height: 30px;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 4px;
 }
 .form--contact {
     margin-top: 81px;
@@ -264,7 +266,7 @@ header {
 .button--contact {
     display: block;
     margin: 0px auto;
-    margin-top: 43px;
+    margin-top: 44px;
     background-color: #2977C9;
     font-size: 28px;
 }
@@ -278,14 +280,14 @@ header {
     position: relative;
     bottom: .5px;
     right: 2px;
-
 }
 .message__privacy {
     text-align: center;
-    margin-top: 4.97px;
+    margin-top: 4px;
     margin: 0px;
 }
-/*PROBLEM: the selctor can't be place on the top.*/
+/*PROBLEM 1: the selctor can't be place on the top.*/
+/*PROBLEM 2: top and bottom padding can't be remove.*/
 .email__icon {
     font-size: 100px;
 }
