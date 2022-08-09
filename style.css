@@ -134,6 +134,29 @@ header {
     margin-left: 5px;
     line-height: 38px;
 }
+.part__one {
+    animation-name: fade__away;
+    animation-duration: 1s;
+}
+.part__two {
+    animation-name: fade__away;
+    animation-duration: 2s;
+}
+.part__three {
+    animation-name: fade__away;
+    animation-duration: 3s;
+}
+.part__four {
+    animation-name: fade__away;
+    animation-duration: 4s;
+}
+ @keyframes fade__away {
+    0% { opacity: 0%; }
+    25% { opacity: 25%; }
+    50% { opacity: 50%; }
+    100% { opacity: 100%; }
+ }
+
 .langExp--hero {
     line-height: 12px;
     margin-top: 20px;
