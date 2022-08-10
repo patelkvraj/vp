@@ -111,60 +111,100 @@ header {
 /*PROBLEM 1: Border conflict between about me while zooming in and out.*/
 .hero {
     width: 100%;
-    background-color: #D6E5DC;
     position: fixed;
     padding-top: 148px;
     padding-bottom: 148px;
+
+    animation-name: ChangeBackground;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
 }
+/*PROBLEM 1: not properly aligns with the hero background.*/
 .content__wrap--hero {
     height: 100%;
     text-align: left;
     padding-bottom: 32px;
 }
 .section__title--hero {
-    font-size: 105px;
-    line-height: 116px;
-    padding: 0px;
-    margin: 0px;
-    text-align: left;
-}
-.section__title--hero strong{
-    animation: makeItBold;
-    animation-duration: 4s;
-}
-/* @keyframes makeItBold {
-    from { font-weight: normal; }
-    to { font-weight: 400; }
-} */
-.section__subtitle--hero {
-    font-size: 36px;
     font-weight: bold;
-    margin-left: 5px;
-    line-height: 38px;
+    color: black;
+    line-height: 116px;
+    text-align: left;
+
+    animation: changeTitle;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+.section__subtitle--hero {
+    margin-top: 22.178px;
+    font-size: 36px;
+
+    animation-name: changeSubTitle;
+    animation-duration: 2s;
+    animation-delay: 5s;
+    animation-fill-mode: forwards;
 }
 .langExp--hero {
     line-height: 12px;
-    margin-top: 20px;
-    margin-left: 7px;
-    margin-bottom: 94px;
-    font-weight: 400;
-    font-size: 18px;
-    color: #939393;
+    margin-top: 22.178px;
+    margin-bottom: 22.178px;
+
+    animation-name: changeThirdTitle;
+    animation-duration: 3s;
+    animation-delay: 8s;
+    animation-fill-mode: forwards;
 }
 .hero__button {
-    font-size: 28px;
-    padding-top: 12px;
-    padding-bottom: 15.29px;
-    padding-left: 40px;
-    padding-right: 43.07px;
-    position: relative;
-    margin-left: 5px;
+    background-color: buttonface;
+    color: buttontext;
+    border-radius: 0px;
+    border-width: .5px;
+    border-style: outset;
+    box-sizing: border-box;
+    padding: 1px 6px;
+    font-family: 'Ubuntu', sans-serif;
+
+    animation: changeButton;
+    animation-duration: 8s;
+    animation-delay: 11s;
+    animation-fill-mode: both;
 }
-.hero__button:hover {
+
+
+/* ----- Keyframes ----- */
+@keyframes ChangeBackground{
+    from { background-color: white; }
+    to { background-color: #D6E5DC; }
+}
+@keyframes changeTitle {
+    50% { color: black; font-size: 105px; }
+    100% { font-weight: normal; color: #3F9CA3; font-size: 105px; }
+}
+@keyframes changeSubTitle {
+    50% { margin-left: 5px; }
+    100% {  margin-left: 5px; margin-top: 0px; }
+}
+@keyframes changeThirdTitle {
+    40% { font-size: 18px; }
+    85% { margin-top: 20px; margin-left: 7px; }
+    100% { margin-top: 20px; margin-bottom: 81px; margin-left: 7px; font-weight: 400; font-size: 18px; color: #939393; }
+}
+@keyframes changeButton {
+    45% { margin-left: 5px; padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px;}
+    55% { font-size: 28px;  }
+    100% { 
+        font-size: 28px; padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; 
+        background-color: red; border-radius: 27.5px; color: white; border: none; margin-left: 5px; 
+    }
+}
+
+/*Not working*/
+/* .hero__button:hover {
     background-color: white;
     color: red;
     border: red solid 1px;
-}
+} */
 
 
 /* -------------------- About Me ------------------ */
