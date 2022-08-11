@@ -51,7 +51,7 @@ p {
 }
 .move__down {
     position: relative;
-    top: 646px;
+    top: 741px;
 }
 .text {
     font-family: 'Source Sans Pro', sans-serif;
@@ -112,8 +112,10 @@ header {
 .hero {
     width: 100%;
     position: fixed;
-    padding-top: 148px;
-    padding-bottom: 148px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: white;
+
 
     animation-name: ChangeBackground;
     animation-duration: 3s;
@@ -124,6 +126,12 @@ header {
     height: 100%;
     text-align: left;
     padding-bottom: 32px;
+    width: 100%;
+
+    animation-name: moveIt;
+    animation-fill-mode: forwards;
+    animation-duration: 2s;
+    animation-delay: 15s;
 }
 .section__title--hero {
     font-weight: bold;
@@ -134,7 +142,7 @@ header {
     animation: changeTitle;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 2s;
 }
 .section__subtitle--hero {
     margin-top: 22.178px;
@@ -166,40 +174,45 @@ header {
     font-family: 'Ubuntu', sans-serif;
 
     animation: changeButton;
-    animation-duration: 8s;
+    animation-duration: 6s;
     animation-delay: 11s;
     animation-fill-mode: both;
 }
 
-
 /* ----- Keyframes ----- */
 @keyframes ChangeBackground{
-    from { background-color: white; }
-    to { background-color: #D6E5DC; }
+    60% { background-color: #D6E5DC;  }
+    90% { padding-top: 198px; padding-bottom: 198px; }
+    100% { background-color: #D6E5DC; padding-top: 198px; padding-bottom: 198px;}
+}
+@keyframes moveIt {
+    100% { width: 80%; padding-bottom: 32px; }
 }
 @keyframes changeTitle {
     50% { color: black; font-size: 105px; }
     100% { font-weight: normal; color: #3F9CA3; font-size: 105px; }
 }
 @keyframes changeSubTitle {
-    50% { margin-left: 5px; }
+    2% { margin-left: 5px; }
+    70% { margin-top: 0px; }
     100% {  margin-left: 5px; margin-top: 0px; }
 }
 @keyframes changeThirdTitle {
+    2% { margin-left: 7px; }
     40% { font-size: 18px; }
-    85% { margin-top: 20px; margin-left: 7px; }
+    85% { margin-top: 20px; }
     100% { margin-top: 20px; margin-bottom: 81px; margin-left: 7px; font-weight: 400; font-size: 18px; color: #939393; }
 }
 @keyframes changeButton {
-    45% { margin-left: 5px; padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px;}
-    55% { font-size: 28px;  }
+    2% { margin-left: 5px; }
+    75% { padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; font-size: 28px; }
     100% { 
         font-size: 28px; padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; 
         background-color: red; border-radius: 27.5px; color: white; border: none; margin-left: 5px; 
     }
 }
 
-/*Not working*/
+/*Problem: Not working*/
 /* .hero__button:hover {
     background-color: white;
     color: red;
