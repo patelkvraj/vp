@@ -136,7 +136,7 @@ header {
 .section__title--hero {
     font-weight: bold;
     color: black;
-    line-height: 116px;
+    line-height: 74px;
     text-align: left;
 
     animation: changeTitle;
@@ -146,7 +146,8 @@ header {
 }
 .section__subtitle--hero {
     margin-top: 22.178px;
-    font-size: 36px;
+    font-size: 28px;
+    line-height: 30px;
 
     animation-name: changeSubTitle;
     animation-duration: 2s;
@@ -154,9 +155,10 @@ header {
     animation-fill-mode: forwards;
 }
 .langExp--hero {
-    line-height: 12px;
+    line-height: 19px;
     margin-top: 22.178px;
     margin-bottom: 22.178px;
+    
 
     animation-name: changeThirdTitle;
     animation-duration: 3s;
@@ -182,15 +184,16 @@ header {
 /* ----- Keyframes ----- */
 @keyframes ChangeBackground{
     60% { background-color: #D6E5DC;  }
-    90% { padding-top: 198px; padding-bottom: 198px; }
-    100% { background-color: #D6E5DC; padding-top: 198px; padding-bottom: 198px;}
+    90% { padding-top: 168px; padding-bottom: 168px; }
+    100% { background-color: #D6E5DC; padding-top: 168px; padding-bottom: 168px;}
 }
 @keyframes moveIt {
+    30%{ width: 80%; padding-bottom: 32px; }
     100% { width: 80%; padding-bottom: 32px; }
 }
 @keyframes changeTitle {
-    50% { color: black; font-size: 105px; }
-    100% { font-weight: normal; color: #3F9CA3; font-size: 105px; }
+    50% { color: black; font-size: 68px; }
+    100% { font-weight: normal; color: #3F9CA3; font-size: 68px; }
 }
 @keyframes changeSubTitle {
     2% { margin-left: 5px; }
@@ -199,15 +202,15 @@ header {
 }
 @keyframes changeThirdTitle {
     2% { margin-left: 7px; }
-    40% { font-size: 18px; }
+    40% { font-size: 16px; }
     85% { margin-top: 20px; }
-    100% { margin-top: 20px; margin-bottom: 81px; margin-left: 7px; font-weight: 400; font-size: 18px; color: #939393; }
+    100% { margin-top: 20px; margin-bottom: 81px; margin-left: 7px; font-weight: 400; font-size: 16px; color: #939393; }
 }
 @keyframes changeButton {
     2% { margin-left: 5px; }
-    75% { padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; font-size: 28px; }
+    75% { padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; font-size: 18px; }
     100% { 
-        font-size: 28px; padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; 
+        font-size: 18px; padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; 
         background-color: red; border-radius: 27.5px; color: white; border: none; margin-left: 5px; 
     }
 }
