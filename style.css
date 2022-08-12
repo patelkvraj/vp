@@ -13,8 +13,8 @@ body {
     color: white;
 }
 .button {
-    width: 220.45px;
-    height: 66px;
+    width: 180px;
+    height: 46px;
     background-color: red;
     border: none;
     color: white;
@@ -229,7 +229,7 @@ header {
 }
 .about__body p {
     margin-top: 44px;
-    font-size: 28px;
+    font-size: 22px;
     text-align: left;
     font-weight: 400;
 }
@@ -254,7 +254,7 @@ header {
 }
 .project__description {
     margin-top: 40.5px;
-    font-size: 28px;
+    font-size: 22px;
     float: left;
     border-top: solid black 1px;
 }
@@ -279,7 +279,7 @@ header {
     align-items: center;
 }
 .image--projects {
-    width: 503px;
+    width: 303px;
     border-radius: 100px;
     border: solid white 5px;
 }
@@ -334,7 +334,7 @@ header {
     margin: 0px auto;
     margin-top: 44px;
     background-color: #2977C9;
-    font-size: 28px;
+    font-size: 18px;
 }
 .button--contact:hover{
     background-color: white;
@@ -351,6 +351,7 @@ header {
     text-align: center;
     margin-top: 4px;
     margin: 0px;
+    font-size: 12px;
 }
 
 /*PROBLEM: Footer does not matches with the figma.*/
