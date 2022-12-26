@@ -1,26 +1,13 @@
-
-/*                          THE DOCUMENTATION
-
-Dummy comment for function
---------------------------
-Purpose: The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. 
-Function call: The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-Location: The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-
-Dummy comment for if-else/if statements
---------------------------
-Purpose: The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-
-
-*/
-
-
 //----------------------------------------------------------------------------------------------------------------
 /*
-Purpose: The function will give an alert when the user will try to use the form service. 
-Function call: index.html file.
-Location: The function is use in the CONTACT section. 
+Name            :   giveAlert()
+Purpose         :   The function will give an alert when the user will try to use the form service 
+Input           :	N/A
+Output          :	N/A
+Function call   :   index.html 
+Location        :   The function is use in the CONTACT section 
 */
+
 function giveAlert() {
     alert("The service is currently unavailable. I am still working on it. Sorry for the inconvenience.");
 }
@@ -55,9 +42,12 @@ start__date__javaScript.setUTCFullYear(2022);   // the year I started learning J
 document.getElementById("javaScript__langExp--hero").innerHTML = calculateMonths(start__date__javaScript.getUTCMonth());
 
 /*
-Purpose: Gives the total number of months passed since learning html. (You started learning html: Feb 2022)
-Function call: script.js file.
-Location: The function is use in the "Programming Languages Experience" section. 
+Name            :   calculateMonths()
+Purpose         :   Gives the total number of months passed since learning html. (You started learning html: Feb 2022)
+Input           :   N/A
+Output          :   N/A
+Function call   :   script.js 
+Location        :   The function is use in the "Programming Languages Experience" section
 */
 function calculateMonths(x) {
     return ((1 + current__date.getUTCMonth()) - (1 + x))
