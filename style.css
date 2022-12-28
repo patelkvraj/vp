@@ -116,7 +116,6 @@ header {
     padding-bottom: 0px;
     background-color: white;
 
-
     animation-name: ChangeBackground;
     animation-duration: 3s;
     animation-fill-mode: forwards;
@@ -158,7 +157,6 @@ header {
     line-height: 19px;
     margin-top: 22.178px;
     margin-bottom: 22.178px;
-    
 
     animation-name: changeThirdTitle;
     animation-duration: 3s;
