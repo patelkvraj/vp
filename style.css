@@ -154,7 +154,7 @@ header {
     animation-delay: 5s;
     animation-fill-mode: forwards;
 }
-.langExp--hero {
+/* .langExp--hero {
     line-height: 19px;
     margin-top: 22.178px;
     margin-bottom: 22.178px;
@@ -164,7 +164,7 @@ header {
     animation-duration: 3s;
     animation-delay: 8s;
     animation-fill-mode: forwards;
-}
+} */
 .hero__button {
     background-color: buttonface;
     color: buttontext;
