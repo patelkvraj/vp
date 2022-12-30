@@ -147,6 +147,7 @@ header {
     margin-top: 22.178px;
     font-size: 28px;
     line-height: 30px;
+    margin-bottom: 22.178px;
 
     animation-name: changeSubTitle;
     animation-duration: 2s;
