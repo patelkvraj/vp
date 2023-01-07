@@ -12,6 +12,19 @@ function giveAlert() {
     alert("The service is currently unavailable. I am still working on it. Sorry for the inconvenience.");
 }
 
+/*-------------------------------------- Programming Languages Experience ------------------------------------- */
+// ---------- HTML ---------- 
+// You started learning html since Feb 2022
+const start__date__html = new Date();  
+start__date__html.setUTCDate(1);        // the date I started learning HTML
+start__date__html.setUTCMonth(2);       // the month I started learning HTML 
+start__date__html.setUTCFullYear(2022); // the year I started learning HTML
+
+//document.getElementById("html__languageExperience--hero").innerHTML = monthExperience(start__date__html.getMonth(), start__date__html.getFullYear()); 
+document.getElementById("html__languageExperience--hero").innerHTML = monthExperience(); 
+
+
+
 
 //          PROBLEM: Update will not work after this december.
 // /*-------------------------------------- Programming Languages Experience ------------------------------------- */
@@ -50,3 +63,17 @@ function giveAlert() {
 // function calculateMonths(x) {
 //     return ((1 + current__date.getUTCMonth()) - (1 + x))
 // }
+
+function monthExperience(){
+    /* Elapsed time between learn(When I learned a language) and present time */
+    const learn_time = new Date(2022, 2, 1, 0, 0);                                      //  Feb 1, 2022
+    const present_full_date = new Date();                                               //  now
+    var diff_in_time = present_full_date.getTime() - learn_time.getTime();              //  now - Feb 1, 2022
+    var diff_in_month = Math.round((diff_in_time / (1000 * 60 * 60 * 24 * 30)) + 1);    //  milliseconds to months, and add 1 to round up calculation correctly 
+
+    if(diff_in_month <= 12){
+        return diff_in_month;
+    }else {
+        alert("It's more than a year");
+    }
+}

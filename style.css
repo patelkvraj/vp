@@ -49,7 +49,7 @@ p {
     width: 80%;
     text-align: center;
 }
-.move__down {
+.move__down {                                           /*What's this?*/
     position: relative;
     top: 741px;
 }
@@ -115,33 +115,36 @@ header {
     padding-top: 0px;
     padding-bottom: 0px;
     background-color: white;
+    border: solid blue;
 
-    animation-name: ChangeBackground;
+    /* animation-name: ChangeBackground;
     animation-duration: 3s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
 /*PROBLEM 1: not properly aligns with the hero background.*/
 .content__wrap--hero {
     height: 100%;
     text-align: left;
-    padding-bottom: 32px;
+    /* padding-bottom: 32px;                   What it's there? */
     width: 100%;
 
-    animation-name: moveIt;
+    /* animation-name: moveIt;
     animation-fill-mode: forwards;
     animation-duration: 2s;
-    animation-delay: 15s;
+    animation-delay: 15s; */
 }
 .section__title--hero {
     font-weight: bold;
     color: black;
     line-height: 74px;
     text-align: left;
+    margin: none;
+    padding: none;
 
-    animation: changeTitle;
+    /* animation: changeTitle;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    animation-delay: 2s; */
 
 }
 .section__subtitle--hero {
@@ -149,22 +152,26 @@ header {
     font-size: 28px;
     line-height: 30px;
     margin-bottom: 22.178px;
+    margin: none;
+    padding: none;
 
-    animation-name: changeSubTitle;
+    /* animation-name: changeSubTitle;
     animation-duration: 2s;
     animation-delay: 5s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: forwards; */
 }
-/* .langExp--hero {
+.languageExperience--hero {
     line-height: 19px;
     margin-top: 22.178px;
     margin-bottom: 22.178px;
+    margin: none;
+    margin: none;
 
-    animation-name: changeThirdTitle;
+    /* animation-name: changeThirdTitle;
     animation-duration: 3s;
     animation-delay: 8s;
-    animation-fill-mode: forwards;
-} */
+    animation-fill-mode: forwards; */
+}
 .hero__button {
     background-color: buttonface;
     color: buttontext;
@@ -174,16 +181,18 @@ header {
     box-sizing: border-box;
     padding: 1px 6px;
     font-family: 'Ubuntu', sans-serif;
+    margin: none;
+    padding: none;
 
-    animation: changeButton;
+    /* animation: changeButton;
     animation-duration: 6s;
-    animation-delay: 11s;
-    animation-fill-mode: both;
+    animation-delay: 8s;
+    animation-fill-mode: both; */
 }
 
 /* ----- Keyframes ----- */
 @keyframes ChangeBackground{
-    60% { background-color: #D6E5DC;  }
+    60% { background-color: #D6E5DC; }
     90% { padding-top: 168px; padding-bottom: 168px; }
     100% { background-color: #D6E5DC; padding-top: 168px; padding-bottom: 168px;}
 }
@@ -211,7 +220,7 @@ header {
     75% { padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; font-size: 18px; }
     100% { 
         font-size: 18px; padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; 
-        background-color: red; border-radius: 27.5px; color: white; border: none; margin-left: 5px; 
+        background-color: red; border-radius: 27.5px; color: white; margin-left: 5px; 
     }
 }
 
