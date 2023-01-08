@@ -115,39 +115,32 @@ header {
     padding-top: 0px;
     padding-bottom: 0px;
     background-color: white;
-    border: solid blue;
-    padding-top: 168px; 
-    padding-bottom: 168px;
 
-    /* animation-name: ChangeBackground;
+    animation-name: ChangeBackground;
     animation-duration: 3s;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 }
 /*PROBLEM 1: not properly aligns with the hero background.*/
 .content__wrap--hero {
     height: 100%;
     text-align: left;
-    /* padding-bottom: 32px;                   What it's there? */
     width: 100%;
 
-    /* animation-name: moveIt;
+    animation-name: moveIt;
     animation-fill-mode: forwards;
     animation-duration: 2s;
-    animation-delay: 15s; */
+    animation-delay: 15s;
 }
 .section__title--hero {
     font-weight: bold;
     color: black;
     line-height: 74px;
     text-align: left;
-    margin: none;
-    padding: none;
-    border: solid red;
 
-    /* animation: changeTitle;
+    animation: changeTitle;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-    animation-delay: 2s; */
+    animation-delay: 2s;
 
 }
 .section__subtitle--hero {
@@ -157,23 +150,21 @@ header {
     margin-bottom: 22.178px;
     margin: none;
     padding: none;
-    border: solid red;
 
-    /* animation-name: changeSubTitle;
+    animation-name: changeSubTitle;
     animation-duration: 2s;
     animation-delay: 5s;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 }
 .languageExperience--hero {
     line-height: 19px;
     margin-top: 22.178px;
     margin-bottom: 22.178px;
-    border: solid red;
 
-    /* animation-name: changeThirdTitle;
+    animation-name: changeThirdTitle;
     animation-duration: 3s;
     animation-delay: 8s;
-    animation-fill-mode: forwards; */
+    animation-fill-mode: forwards;
 }
 .hero__button {
     background-color: buttonface;
@@ -185,10 +176,10 @@ header {
     padding: 1px 6px;
     font-family: 'Ubuntu', sans-serif;
 
-    /* animation: changeButton;
+    animation: changeButton;
     animation-duration: 6s;
     animation-delay: 11s;
-    animation-fill-mode: both; */
+    animation-fill-mode: both;
 }
 
 /* ----- Keyframes ----- */
@@ -208,13 +199,13 @@ header {
 @keyframes changeSubTitle {
     2% { margin-left: 5px; }
     70% { margin-top: 0px; }
-    100% {  margin-left: 5px; margin-top: 0px; }
+    100% {  margin-left: 5px; margin-top: 0px; margin-bottom: 0px;}
 }
 @keyframes changeThirdTitle {
     2% { margin-left: 7px; }
     40% { font-size: 16px; }
-    85% { margin-top: 20px; }
-    100% { margin-top: 20px; margin-bottom: 81px; margin-left: 7px; font-weight: 400; font-size: 16px; color: #939393; }
+    85% { margin-top: 0px; }
+    100% { margin-top: 0px; margin-bottom: 81px; margin-left: 7px; font-weight: 400; font-size: 16px; color: #939393; }
 }
 @keyframes changeButton {
     2% { margin-left: 5px; }
@@ -236,7 +227,6 @@ header {
 /* -------------------- About Me ------------------ */
 .about {
     background-color: white;
-    border: solid red;
 }
 .about__body p {
     margin-top: 44px;
