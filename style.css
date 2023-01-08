@@ -49,10 +49,11 @@ p {
     width: 80%;
     text-align: center;
 }
-.move__down {                                           /*What's this?*/
+/* .move__down {                                      
     position: relative;
-    top: 741px;
-}
+    top: 575px;
+    border: solid greenyellow;
+} */
 .text {
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -111,11 +112,12 @@ header {
 /*PROBLEM 1: Border conflict between about me while zooming in and out.*/
 .hero {
     width: 100%;
-    position: fixed;
     padding-top: 0px;
     padding-bottom: 0px;
     background-color: white;
     border: solid blue;
+    padding-top: 168px; 
+    padding-bottom: 168px;
 
     /* animation-name: ChangeBackground;
     animation-duration: 3s;
@@ -140,6 +142,7 @@ header {
     text-align: left;
     margin: none;
     padding: none;
+    border: solid red;
 
     /* animation: changeTitle;
     animation-duration: 4s;
@@ -154,6 +157,7 @@ header {
     margin-bottom: 22.178px;
     margin: none;
     padding: none;
+    border: solid red;
 
     /* animation-name: changeSubTitle;
     animation-duration: 2s;
@@ -164,8 +168,7 @@ header {
     line-height: 19px;
     margin-top: 22.178px;
     margin-bottom: 22.178px;
-    margin: none;
-    margin: none;
+    border: solid red;
 
     /* animation-name: changeThirdTitle;
     animation-duration: 3s;
@@ -181,12 +184,10 @@ header {
     box-sizing: border-box;
     padding: 1px 6px;
     font-family: 'Ubuntu', sans-serif;
-    margin: none;
-    padding: none;
 
     /* animation: changeButton;
     animation-duration: 6s;
-    animation-delay: 8s;
+    animation-delay: 11s;
     animation-fill-mode: both; */
 }
 
@@ -235,6 +236,7 @@ header {
 /* -------------------- About Me ------------------ */
 .about {
     background-color: white;
+    border: solid red;
 }
 .about__body p {
     margin-top: 44px;
