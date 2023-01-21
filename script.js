@@ -5,42 +5,23 @@ Purpose         :   The function will give an alert when the user will try to us
 Input           :	N/A
 Output          :	N/A
 Function call   :   index.html 
-Location        :   The function is use in the CONTACT section 
 */
-
 function giveAlert() {
     alert("The service is currently unavailable. I am still working on it. Sorry for the inconvenience.");
 }
 
 /*-------------------------------------- Programming Languages Experience ------------------------------------- */
-// ---------- HTML ---------- 
-// You started learning html since Feb 2022
-// const start__date__html = new Date();  
-// start__date__html.setUTCDate(1);        // the date I started learning HTML
-// start__date__html.setUTCMonth(2);       // the month I started learning HTML 
-// start__date__html.setUTCFullYear(2022); // the year I started learning HTML
-
 document.getElementById("html__languageExperience--hero").innerHTML = languageExperience(2022, 2, 1);          // the date I started learning HTML
 document.getElementById("css__languageExperience--hero").innerHTML = languageExperience(2022, 2, 1);           // the date I started learning CSS
 document.getElementById("javaScript__languageExperience--hero").innerHTML = languageExperience(2022, 8, 1);    // the date I started learning JavaScript
-// document.getElementById("CPlusPlus__languageExperience--hero").innerHTML = monthExperience(2020, 9, 1);     // the date I started learning C++
-
-
-// /* ---------- HTML ---------- */
-// // (You started learning html: Feb 2022)
 
 // /*
-// Name            :   calculateMonths()
-// Purpose         :   To display programming language experience(Time-period) 
-// Input           :   N/A
-// Output          :   N/A
+// Name            :   languageExperience()
+// Purpose         :   Display programming language experience (Time-period) 
+// Input           :   number, number, number
+// Output          :   number
 // Function call   :   script.js 
-// Location        :   The function is use in the "Programming Languages Experience" section
 // */
-// function calculateMonths(x) {
-//     return ((1 + current__date.getUTCMonth()) - (1 + x))
-// }
-
 function languageExperience(year, month, day){
     /* Elapsed time between learn(When I learned a language) and present time */
     const learn_time = new Date(year, month, day, 0, 0);                                //  the date when learned a language
