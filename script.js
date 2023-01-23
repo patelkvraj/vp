@@ -30,7 +30,6 @@ function languageExperience(year, month, day){
 
     var diff_in_time = present_full_date.getTime() - learn_time_full_date.getTime();              //  now - Feb 1, 2022
     var diff_in_month = Math.round((diff_in_time / (1000 * 60 * 60 * 24 * 30)));            //  milliseconds ---> months
-    alert(diff_in_month);
     var learn_year = learn_time_full_date.getUTCFullYear();                             // month in which learned a language
 
     if (diff_in_month < 12) {   // less than a year 
