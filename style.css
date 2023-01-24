@@ -308,17 +308,16 @@ header {
     margin-top: 44px;
     text-align: center;
 }
-/* .text--label--form {
+.text--label--form {
     display: inline;
     display: none;
-} */
+}
 .form__input--contact {
     margin-top: 46.5px;
     height: 70px;
     width: 600px;
     font-size: 24px;
     padding-left: 22.45px ;
-    color: blue;
 }
 .form__input1--contact {
     margin-top: 0px;
