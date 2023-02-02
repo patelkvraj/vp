@@ -57,6 +57,7 @@ p {
 .text {
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 /* ------------------------------------ HEADER ----------------------------------- */
 header {
     width: 100%;
@@ -67,43 +68,42 @@ header {
     z-index: 1;
     overflow: hidden;
 }
-.content__wrap--header {
-    height: 100%;
-    width: 90%;
-}
+
 .container--logo {
-    height: 100%;
-    float: left;
-    display: table;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
 }
-.logo--header {
-    height: 100%;
-    display: table-cell;
-    vertical-align: middle;
+
+.logo {
+    width: 10%;
+    height: 60%;
 }
-.nav--header {
-    height: 100%;
-}
-.nav__list--header {
-    float: right;
+
+.nav {
+    display: flex;
     height: 100%;
 }
-.nav__item__ach--header {
-    height: 100%;
-    display: table;
-    float: left;
-    padding: 0px 25px;
+
+.nav__list {
+    width: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    padding-right: 50px;
 }
-.nav__item__ach:hover{
+
+.nav__list__item__ach {
+    text-decoration: none;
+    color: white;
+    padding: 25px;
+}
+
+.nav__list__item__ach:hover{
     text-decoration: underline red solid  2px;
     text-underline-offset: 5px;
-}
-.nav__item--header {
-    display: table-cell;
-    vertical-align: middle;
-}
-.nav__item__ach--header:last-child {
-    padding-right: 0px;
 }
 
 
@@ -355,37 +355,15 @@ header {
     font-size: 12px;
 }
 
-/*PROBLEM: Footer does not matches with the figma.*/
 /* ----------------------------------- FOOTER ----------------------------------- */
-footer {
-    width: 100%;
-    background-color: #353535;
-    text-align: center;
-    overflow: hidden;
-}
-.nav--footer {
-    padding: 0px;
-}
-.nav__list--footer {
+.footer {
+    background-color: #353535; 
     display: flex;
-    justify-content: center;
-}
-.logo--footer {
-    margin-top: 153px;
-}
-.nav__item--footer {
-    padding: 25px;
+    align-items: center;
 }
 
-
-/* -------------------- CREDITS ------------------ */
-.copyright {
-    font-size: 10px;
-    border-top: 1px solid #FFFFFF;
-    padding-top: 4px;
-    padding-bottom: 3px;
+.message {
     color: white;
-    margin-top: 199px;
 }
 
 

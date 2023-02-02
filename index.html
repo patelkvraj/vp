@@ -40,7 +40,7 @@ __________________
         <title>VrajPatel Portfolio Website</title>
         
         <!-- CSS file -->
-        <link rel="stylesheet" href="style.css">         
+        <link rel="stylesheet" href="css\style.css">         
         
         <!-- FONT -->
         <script src="https://kit.fontawesome.com/771d1fbba5.js" crossorigin="anonymous"></script>   
@@ -55,20 +55,18 @@ __________________
     <body class="body">
         <!-------------------------------- HEADER ------------------------------>
         <header class="header">
-            <div class="content__wrap content__wrap--header">
+            <nav class="nav">
                 <!-- Logo --->
                 <div class="container--logo" role="logo">
-                    <img class="logo logo--header" src="img/logo-VP.svg" width="100px" alt="Logo of the website.">
+                    <img class="logo" src="img/logo-VP.svg" width="100px" alt="Logo of the website.">
                 </div>
                 <!-- Navigation Panel -->
-                <nav class="nav nav--header">
-                    <ul class="nav__list nav__list--header">
-                        <a class="nav__item__ach nav__item__ach--header" href="#projects"><li class="nav__item nav__item--header">Projects</li></a>
-                        <a class="nav__item__ach nav__item__ach--header" href="#about"><li class="nav__item nav__item--header">About</li></a>
-                        <a class="nav__item__ach nav__item__ach--header" href="#contact"><li class="nav__item nav__item--header">Contact</li></a>
-                    </ul>                    
-                </nav>
-            </div>
+                <ul class="nav__list">
+                    <li class="nav__list__item"><a class="nav__list__item__ach" href="#projects">Projects</a></li>
+                    <li class="nav__list__item"><a class="nav__list__item__ach" href="#about">About</a></li>
+                    <li class="nav__list__item"><a class="nav__list__item__ach" href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </header>
 
         <!-------------------------------- BODY ------------------------------>
@@ -220,24 +218,10 @@ __________________
                 </div>
             </section>
 
-
          <!-------------------------------- FOOTER ------------------------------> 
-         <footer class="footer">
+         <footer class="footer ">
             <div class="content__wrap content__wrap--footer">
-                <!-- Navigation Panel -->
-                <nav class="nav nav--footer">
-                    <ul class="nav__list nav__list--footer">
-                        <a class="nav__item__ach nav__item__ach--footer" href="#projects"><li class="nav__item nav__item--footer">Projects</li></a>
-                        <a class="nav__item__ach nav__item__ach--footer" href="#about"><li class="nav__item nav__item--footer nav__item__first--footer">About</li></a>
-                        <a class="nav__item__ach nav__item__ach--footer" href="#contact"><li class="nav__item nav__item--footer nav__item__second--footer">Contact</li></a>
-                    </ul>
-                </nav>
-                <!-- Logo -->
-                <div class="container--logo--footer" role="logo">
-                    <img class="logo logo--footer" src="img/logo-VP.svg" width="100px" alt="A logo of the website.">
-                </div>
-                <!-- Copyright Notice -->
-                <div class="message copyright"><i class="fa-solid fa-copyright"></i> 2022 Vraj Patel. All rights reserved.</div>
+                <p class="message">Copyright &copy; 2022 Vraj Patel. All rights reserved.</p>
             </div>
          </footer>
 
