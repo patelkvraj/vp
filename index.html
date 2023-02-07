@@ -36,10 +36,12 @@ __________________
 <!doctype html>
 <html lang="en">   
     <head>
-        <meta charset="utf-8">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>VrajPatel Portfolio Website</title>
         
-        <!-- CSS file -->
+        <!---------------------------------------------------------- CSS ---------------------------------------------------------->
         <link rel="stylesheet" href="css\style.css">         
         
         <!-- FONT -->
@@ -51,9 +53,9 @@ __________________
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet"> 
     </head>
 
-    <!---------------------------------------------------------- HTML ---------------------------------------------------------->
+    <!-------------------------------------------------- BODY -------------------------------------------------->
     <body class="body">
-        <!-------------------------------- HEADER ------------------------------>
+        <!-------------------------------- HEADER -------------------------------->
         <header class="header">
             <nav class="nav">
                 <!-- Logo --->
@@ -69,13 +71,12 @@ __________________
             </nav>
         </header>
 
-        <!-------------------------------- BODY ------------------------------>
+        <!-------------------------------- MAIN CONTENT -------------------------------->
+        <main class="main__content">
             <!------------------- HERO -------------------->
-            <!-- Change the size of the hero's background. -->
             <section class="section hero" id="home">
                 <div class="content__wrap content__wrap--hero">
                     <h1 class="section__title section__title--hero">Hi, I'm <strong>Vraj Patel!</strong></h1> 
-                    <!-- TO DO: Add a transition. Typing one char by char "Software Developer"  -->
                     <h2 class="section__subtitle section__subtitle--hero">Software Developer</h2>
                     <p class=" text languageExperience--hero">
                         HTML: <span id="html__languageExperience--hero">Time</span> year
@@ -83,10 +84,10 @@ __________________
                          /  JavaScript: <span id="javaScript__languageExperience--hero">Time</span> months  
                          /  C++: <span id="CPlusPlus__languageExperience--hero">Time</span> years   
                     </p> 
-                    <a class="button hero__button" href="#contact" role="button">HIRE ME!</a>
+                    <a class="button button--hero" href="#contact" role="button">HIRE ME!</a>
                 </div>
             </section>
-            <!------------------- About me -------------------->
+            <!-------------------------------- About me -------------------------------->
             <section class="section about"  id="about">
                 <div class="content__wrap content__wrap--about">
                     <h1 class="section__title section__title--about">This is me</h1>
@@ -105,7 +106,7 @@ __________________
                 </div>
             </section>
 
-            <!------------------- Projects -------------------->
+            <!-------------------------------- Projects -------------------------------->
             <section class="section projects" id="projects">
                 <div class="content__wrap content__wrap--projects">
                     <h1 class="section__title section__title--projects">Projects</h1>
@@ -130,7 +131,7 @@ __________________
                                 <img class="image--projects" src="img/Vraj-Patel.jpg" alt="An image of a the project. Click to view the project.">
                             </a>                        
                         </div>
-                    </div>                
+                    </div>         
                     <!-- Project-2 (Still Shine) -->
                     <div class="project project__stillShine">
                         <div class="flex__container__outer--projects">
@@ -173,57 +174,39 @@ __________________
                 </div>
             </section>
 
-            <!------------------- Contact -------------------->
+            <!-------------------------------- Contact -------------------------------->
             <section class="section contact"  id="contact">
                 <div class="content__wrap content__wrap--contact">
-                    <!-- <p class="note note--contact"></p> -->
-                    <i class="fa-solid fa-envelope email__icon"></i>        <!-- email icon -->
                     <h1 class="section__title section__title--contact">Connect With Me</h1>
-                    <p class="message--contact">Simply leave a message and I’ll get right back to you. </p>
-                    <div>
-                        <form class="form--contact">
-                            <label class="form__label"> <!-- label 1 -->
-                                <div class="text--label--form">
-                                    Full name
-                                </div>
-                            </label>
-                            <input aria-label="Full name" class="form__input--contact form__input1--contact" placeholder="Full name" type="text" required><br> 
-
-                            <label class="form__label"> <!-- label 2 -->
-                                <div class="text--label--form">
-                                    Phone number
-                                </div>
-                            </label>
-                            <input class="form__input--contact form__input2--contact" placeholder="Phone number" type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10"> <br>
-
-                            <label class="form__label"> <!-- label 3 -->
-                                <div class="text--label--form">
-                                    Email address
-                                </div>
-                            </label>
-                            <input class="form__input--contact form__input3--contact" placeholder="Email address*" type="email" required> <br>
-
-                            <label class="form__label"> <!-- label 4 -->
-                                <div class="text--label--form">
-                                    Your Message
-                                </div>
-                            </label>                        
-                            <textarea class="form__input--contact form__input4--contact" placeholder="Your Message*" required></textarea> 
-                            <button class="button button--contact" onclick="giveAlert()">Submit</button>     
-                            <p class="message__privacy">
-                                <i class="fa-solid fa-lock lock__icon"></i><!-- lock icon -->We never share your private data.
-                            </p>
-                        </form>
-                    </div>
+                    <p class="text message__leaveAMessage">Simply leave a message and I’ll get right back to you.</p>
+                    <form class="form">
+                         <!-- label/input 1 --> 
+                        <label class="form__label"><div class="text--label--form">Full named</div></label>
+                        <input aria-label="Full name" class="form__input form__input1" placeholder="Full name" type="text" required><br> 
+                        
+                        <!-- label/input 2 -->
+                        <label class="form__label"><div class="text--label--form">Phone number</div></label>
+                        <input class="form__input form__input2" placeholder="Phone number" type="number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10"><br>
+                        
+                        <!-- label/input 3 -->
+                        <label class="form__label"><div class="text--label--form">Email address</div></label>
+                        <input class="form__input form__input3" placeholder="Email address*" type="email" required><br>
+                        
+                        <!-- label/input 4 -->
+                        <label class="form__label"><div class="text--label--form">Your Message</div></label>                        
+                        <textarea class="form__input form__input4" placeholder="Your Message*" required></textarea> 
+                        
+                        <button class="button button--contact" onclick="giveAlert()">Submit</button>     
+                        <p class="message__privacy">We never share your private data.</p>
+                    </form>
                 </div>
             </section>
+        </main>
 
-         <!-------------------------------- FOOTER ------------------------------> 
-         <footer class="footer ">
-            <div class="content__wrap content__wrap--footer">
-                <p class="message">Copyright &copy; 2022 Vraj Patel. All rights reserved.</p>
-            </div>
-         </footer>
+        <!-------------------------------- FOOTER --------------------------------> 
+         <footer class="footer">
+            <p class="message">Copyright &copy; 2022 Vraj Patel. All rights reserved.</p>
+        </footer>
 
          <!---------------------------------------------------------- JavaScipt ---------------------------------------------------------->
          <script src="script.js"></script>

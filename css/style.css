@@ -26,7 +26,6 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
     font-size: 48px;
-    text-align: center;
     line-height: 56.5px;
     font-weight: 400px;
 }
@@ -56,6 +55,10 @@ p {
 } */
 .text {
     font-family: 'Source Sans Pro', sans-serif;
+}
+
+.button {
+    font-size: 18px;
 }
 
 /* ------------------------------------ HEADER ----------------------------------- */
@@ -126,7 +129,7 @@ header {
     text-align: left;
     width: 100%;
 
-    animation-name: moveIt;
+    animation-name: ShrinkIt;
     animation-fill-mode: forwards;
     animation-duration: 2s;
     animation-delay: 15s;
@@ -135,7 +138,6 @@ header {
     font-weight: bold;
     color: black;
     line-height: 74px;
-    text-align: left;
 
     animation: changeTitle;
     animation-duration: 4s;
@@ -166,7 +168,7 @@ header {
     animation-delay: 8s;
     animation-fill-mode: forwards;
 }
-.hero__button {
+.button--hero {
     background-color: buttonface;
     color: buttontext;
     border-radius: 0px;
@@ -188,9 +190,9 @@ header {
     90% { padding-top: 168px; padding-bottom: 168px; }
     100% { background-color: #D6E5DC; padding-top: 168px; padding-bottom: 168px;}
 }
-@keyframes moveIt {
-    30%{ width: 80%; padding-bottom: 32px; }
-    100% { width: 80%; padding-bottom: 32px; }
+@keyframes ShrinkIt {
+    30%{ width: 80%; }
+    100% { width: 80%; }
 }
 @keyframes changeTitle {
     50% { color: black; font-size: 68px; }
@@ -212,14 +214,14 @@ header {
     75% { padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; font-size: 18px; }
     100% { 
         font-size: 18px; padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; 
-        background-color: red; border-radius: 27.5px; color: white; margin-left: 5px; 
+        background-color: red; border-radius: 27.5px; color: white; margin-left: 5px;
     }
 }
 
 /*Problem: Not working*/
-/* .hero__button:hover {
+/* .button--hero:hover {
     background-color: white;
-    color: red;
+    color: white;
     border: red solid 1px;
 } */
 
@@ -228,6 +230,7 @@ header {
 .about {
     background-color: white;
 }
+
 .about__body p {
     margin-top: 44px;
     font-size: 22px;
@@ -241,11 +244,22 @@ header {
     background-color: #EAEAEA;
     color: black;
 }
-.content__wrap--projects {
-    text-align: left;
-}
 .project {
     margin-top: 44px;
+    text-align: left;
+}
+.flex__container__outer--projects {
+    display: flex;
+    column-gap: 50px;
+    justify-content: right;
+    align-items: center;
+}
+.flex__container__inner--projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    border-right: solid black 1px;
 }
 .heading--projects {
     font-weight: normal;
@@ -266,19 +280,6 @@ header {
     text-decoration: underline 1px red;
     text-underline-offset: 2px;
 }
-.flex__container__inner--projects {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 80%;
-    border-right: solid black 1px;
-}
-.flex__container__outer--projects {
-    display: flex;
-    column-gap: 50px;
-    justify-content: right;
-    align-items: center;
-}
 .image--projects {
     width: 303px;
     border-radius: 100px;
@@ -291,38 +292,30 @@ header {
     background-color: #EAB543;
     position: relative;
 }
-/*PROBLEM 1: top and bottom padding can't be remove.*/
-.email__icon {
-    font-size: 100px;
-}
 .section__title--contact {
     color: black;
-    margin-top: 4px;
 }
-.message--contact {
+.message__leaveAMessage {
     font-size: 18px;
     line-height: 21px;
-    margin-top: 4px;
 }
-.form--contact {
+.form {
     margin-top: 44px;
-    text-align: center;
+    padding: 0px;
 }
 .text--label--form {
-    display: inline;
     display: none;
 }
-.form__input--contact {
+.form__input {
     margin-top: 46.5px;
-    height: 70px;
-    width: 600px;
+    width: 60%;
+    height: 4rem;
     font-size: 24px;
-    padding-left: 22.45px ;
 }
-.form__input1--contact {
+.form__input1{
     margin-top: 0px;
 }
-.form__input4--contact {
+.form__input4 {
     height: 250px;
     padding-top: 27.76px;
     resize: none;
@@ -330,26 +323,20 @@ header {
 ::placeholder {
     font-family: 'Source Sans Pro', sans-serif;
 }
+
 .button--contact {
     display: block;
     margin: 0px auto;
-    margin-top: 44px;
+    margin-top: 25px;
     background-color: #2977C9;
-    font-size: 18px;
 }
 .button--contact:hover{
     background-color: white;
-    color: blue;
-    border: solid blue 1px;
+    color: #2977C9;
+    border: solid #2977C9 1px;
 }
-.lock__icon{
-    font-size: 12px;
-    position: relative;
-    bottom: .5px;
-    right: 2px;
-}
+
 .message__privacy {
-    text-align: center;
     margin-top: 4px;
     margin: 0px;
     font-size: 12px;
@@ -360,10 +347,18 @@ header {
     background-color: #353535; 
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .message {
     color: white;
+    font-size: 12px;
+}
+
+@media (max-width: 300px) {
+    .about{
+        background-color: blue;
+    }
 }
 
 
