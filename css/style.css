@@ -89,7 +89,7 @@ header {
     text-decoration: underline red solid  2px;
     text-underline-offset: 5px;
 }
-.symbol--nav__list {
+#symbol--nav__list {
     display: none;
 }
 
