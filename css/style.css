@@ -12,11 +12,7 @@ body {
     color: white;
 }
 .button {
-    width: 180px;
-    height: 46px;
     background-color: red;
-    border: none;
-    color: white;
     border-radius: 27.5px;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -49,9 +45,6 @@ p {
 }
 .text {
     font-family: 'Source Sans Pro', sans-serif;
-}
-.button {
-    font-size: 18px;
 }
 
 /* ------------------------------------ HEADER ----------------------------------- */
@@ -167,7 +160,6 @@ header {
     border-style: outset;
     box-sizing: border-box;
     padding: 1px 6px;
-    font-family: 'Ubuntu', sans-serif;
 
     animation: changeButton;
     animation-duration: 6s;
@@ -202,11 +194,12 @@ header {
 }
 @keyframes changeButton {
     2% { margin-left: 5px; }
-    75% { padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; font-size: 18px; }
-    100% { 
+    45% { padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; font-size: 18px; }
+    85% { 
         font-size: 18px; padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; 
-        background-color: red; border-radius: 27.5px; color: white; margin-left: 5px;
-    }
+        background-color: red; border-radius: 27.5px; color: white; margin-left: 5px; }
+    100% { font-size: 18px; padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; 
+        background-color: red; border-radius: 27.5px; color: white; margin-left: 5px; border: none; }
 }
 
 /*Problem: Not working*/
@@ -318,6 +311,11 @@ header {
     margin: 0px auto;
     margin-top: 25px;
     background-color: #2977C9;
+    font-size: 18px;
+    width: 180px;
+    height: 46px;
+    border: none;
+    color: white;
 }
 .button--contact:hover{
     background-color: white;
