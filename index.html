@@ -24,7 +24,10 @@ __________________
 -->
 
 
-<!-- NOTES -->
+<!-- NOTES 
+"GitHub": Added back all the symbols. Added <abbr> element where appropriate. Adjusted <strong> and <em> throughout the whole code.  
+-->
+
 <!-- 
     TO-DO   : 
         Section         Description
@@ -65,11 +68,14 @@ __________________
                 </div>
                 <!-- Navigation Panel -->
                 <ul class="nav__list">
-                    <li class="nav__list__item"><a class="nav__list__item__ach" href="#projects">Projects</a></li>
-                    <li class="nav__list__item"><a class="nav__list__item__ach" href="#about">About</a></li>
-                    <li class="nav__list__item"><a class="nav__list__item__ach" href="#contact">Contact</a></li>
-                    <i class="fa-solid fa-bars" id="symbol--nav__list"></i> <!--Used id for highest priority selection-->
+                    <li class="nav__list__item nav__list__item__one"><a class="nav__list__item__ach nav__list__item__one__ach" href="#projects">Projects</a></li>
+                    <li class="nav__list__item nav__list__item__two"><a class="nav__list__item__ach nav__list__item__two__ach" href="#about">About</a></li>
+                    <li class="nav__list__item nav__list__item__three"><a class="nav__list__item__ach nav__list__item__three__ach" href="#contact">Contact</a></li>
                 </ul> 
+                <!-- Hamburger -->
+                <div class="hamBurger">
+                    <i class="fa-solid fa-bars" id="symbol--nav__list"></i> <!-- Used id for highest priority selection -->   
+                </div>
             </nav>
         </header>
 
@@ -77,16 +83,18 @@ __________________
         <main class="main__content">
             <!------------------- HERO -------------------->
             <section class="section hero" id="home">
-                <div class="content__wrap content__wrap--hero">
-                    <h1 class="section__title section__title--hero">Hi, I'm <strong>Vraj Patel!</strong></h1> 
-                    <h2 class="section__subtitle section__subtitle--hero">Software Developer</h2>
-                    <p class=" text languageExperience--hero">
-                        HTML: <span id="html__languageExperience--hero">Time</span> year
-                         /  CSS: <span id="css__languageExperience--hero">Time</span> year
-                         /  JavaScript: <span id="javaScript__languageExperience--hero">Time</span> months  
-                         /  C++: <span id="CPlusPlus__languageExperience--hero">Time</span> years   
-                    </p> 
-                    <button class="button button--hero" onclick="document.location='#contact'">HIRE ME!</button> 
+                <div class="background--hero">
+                    <div class="content__wrap content__wrap--hero">
+                        <h1 class="section__title section__title--hero">Hi, I'm <em>Vraj Patel!</em></h1> 
+                        <h2 class="section__subTitle section__subTitle--hero"><em>Software Developer</em></h2>
+                        <p class=" text languageExperience--hero">
+                            <abbr title="HyperText Markup Language">HTML: </abbr><span id="html__languageExperience--hero">Time</span> year
+                             /  <abbr title="Cascading Style Sheets">CSS: </abbr><span id="css__languageExperience--hero">Time</span> year
+                             /  <abbr title="JavaScript">JS: </abbr><span id="javaScript__languageExperience--hero">Time</span> months  
+                             /  C++: <span id="CPlusPlus__languageExperience--hero">Time</span> years   
+                        </p> 
+                        <button class="button button--hero" onclick="document.location='#contact'"><span>HIRE ME!</span></button> 
+                    </div>
                 </div>
             </section>
             <!-------------------------------- About me -------------------------------->
@@ -94,15 +102,15 @@ __________________
                 <div class="content__wrap content__wrap--about">
                     <h1 class="section__title section__title--about">This is me</h1>
                     <div class="about__body">
-                        <p class="text information--about">
-                            Vraj Patel has an associate degree in computer science from Middlesex Community College. 
-                            He loves working with computers, so he chose to pursue a career in computer science. 
+                        <p class="text text--about">
+                            Vraj Patel <strong>has an associate degree in computer science</strong> from Middlesex Community College. 
+                            He <strong>loves working with computers</strong>, so he chose to pursue a career in computer science. 
                             <br><br>
-                            He was a student leader (Supplemental Instructor, Peer Tutor, Mentor, and Blackboard Ambassador). 
-                            He provided academic and tech support to students. He is a certified CRLA (College Reading and Learning Association) level 1 tutor. 
-                            He tutored students in computer science and math. He was a supplemental instructor (SI) for the programming 1 (C++) class. 
+                            He <strong>was a student leader</strong> (Supplemental Instructor, Peer Tutor, Mentor, and Blackboard Ambassador). 
+                            He <strong>provided academic and tech support</strong> to students. He is a certified CRLA (College Reading and Learning Association) level 1 tutor. 
+                            He <strong>tutored students</strong> in computer science and math. He <strong>was a Supplemental Instructor (<abbr title="Supplemental Instructor">SI</abbr>)</strong> for the programming 1 (C++) class. 
                             <br><br>
-                            He wants to work on software applications that benefit people.
+                            He <strong>wants to work on software applications that benefit people.</strong>
                         </p>
                     </div>
                 </div>
@@ -118,9 +126,9 @@ __________________
                             <div class="flex__container__inner--projects">
                                 <a class="heading--projects project__name__ach--projects" href="https://patelkvraj.github.io/vp/" target="_blank" aria-label="Heading of the project.">Vraj Patel</a>
                                 <p class="project__description project__one__description"> 
-                                    A personal website that contains my information and programming projects. 
+                                    A personal <strong>website that contains my information and programming projects.</strong> 
                                     <br><br>
-                                    <strong>Key tools used: </strong>HTML, CSS, JavaScript, GitHub, Figma
+                                    <strong>Key tools used: </strong><abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, <abbr title="JavaScript">JS</abbr>, GitHub, Figma
                                     <br><br>
                                     <strong>Key accomplishments: </strong>Created first every mega project.
                                     <br><br>
@@ -142,7 +150,7 @@ __________________
                                     Still Shine
                                 </a>
                                 <p class="project__description project__one__description"> 
-                                    A prototype of a website that sells used items.  
+                                    <strong>A prototype of a website that sells used items.</strong>  
                                     <br><br>
                                     <strong>Key tools used: </strong>Figma
                                     <br><br>
@@ -165,7 +173,7 @@ __________________
                                     <br><br>
                                     <strong>Key tools used: </strong>Python, Trinket
                                     <br><br>
-                                    <strong>Key accomplishments: </strong>Got interested in programming. Created first ever computer game. Learned all the basic concepts of programming (i.e., loops, if/else, etc….)
+                                    <strong>Key accomplishments: </strong><strong>Got interested in programming.</strong> Created first ever computer game. Learned all the basic concepts of programming (i.e., loops, if/else, etc….)
                                 </p>
                             </div>
                             <a class="project__image__ach--projects" href="https://trinket.io/glowscript/d8806aa273?e=1 " target="_blank">
@@ -179,6 +187,7 @@ __________________
             <!-------------------------------- Contact -------------------------------->
             <section class="section contact"  id="contact">
                 <div class="content__wrap content__wrap--contact">
+                    <i class="fa-solid fa-envelope email__icon"></i>        <!-- email icon -->
                     <h1 class="section__title section__title--contact">Connect With Me</h1>
                     <p class="text message__leaveAMessage">Simply leave a message and I’ll get right back to you.</p>
                     <form class="form">
@@ -199,7 +208,7 @@ __________________
                         <textarea class="form__input form__input4" placeholder="Your Message*" required></textarea> 
                         
                         <button class="button button--contact" onclick="giveAlert()">Submit</button> 
-                        <p class="message__privacy">We never share your private data.</p>
+                        <p class="message__privacy"><i class="fa-solid fa-lock lock__icon"></i><!-- lock icon -->We never share your private data.</p>
                     </form>
                 </div>
             </section>
