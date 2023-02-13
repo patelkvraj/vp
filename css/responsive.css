@@ -13,6 +13,7 @@
         flex-direction: column;
         background-color: #353535;
         height: auto;
+        width: 100%;
     }
 
     .container--logo {
@@ -48,6 +49,12 @@
         display: block;
     }
 
+    .h-nav-resp {
+        height: 50px;
+    }
 
+    .v-class-resp {
+        opacity: 0;
+    }
 
 }
