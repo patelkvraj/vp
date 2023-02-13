@@ -1,6 +1,6 @@
 /*
 GitHub Commit: 
-                Hero: I removed changeBackground effect.
+                Button selector: i added a cursor pointer. 
 */
 
 * {
@@ -21,6 +21,7 @@ body {
     background-color: red;
     border-radius: 27.5px;
     font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
 }
 .section__title {
     color: #3F9CA3;
@@ -34,8 +35,8 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
 }
 .section {
-    padding-top: 68px;
-    padding-bottom: 98px;
+    padding-top: 78px;
+    padding-bottom: 78px;
 }
 p {
     font-family: 'Source Sans Pro', sans-serif;
@@ -205,11 +206,6 @@ header {
     animation-delay: 16s;
     animation-fill-mode: forwards;
 }
-/* .button--hero:hover {
-    background-color: white;
-    color: #2977C9;
-    border: solid white 1px;
-} */
 
 /* ----- Keyframes ----- */
 @keyframes straightTitle{
@@ -228,17 +224,18 @@ header {
     100% {  margin-left: 5px; margin-top: 0px; margin-bottom: 0px;}
 }
 @keyframes changeThirdTitle {
-    2% { margin-left: 7px; }
+    5% { margin-left: 7px; }
+    25% { }
     95% { margin-top: 0px; }
     100% { margin-top: 0px; margin-left: 7px; font-weight: 400; } /**/
 }
 @keyframes changeButton {
     5% { margin-left: 5px; }
-    45% { padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; } /* font-size: 18px;*/
+    45% { padding-top: 12px; padding-bottom: 12px; padding-left: 40px; padding-right: 43.07px; } /* font-size: 18px;*/
     85% { 
-        padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; 
+        padding-top: 12px; padding-bottom: 12px; padding-left: 40px; padding-right: 43.07px; 
         background-color: red; border-radius: 27.5px; margin-left: 5px; } /* font-size: 18px;*/
-    100% { padding-top: 12px; padding-bottom: 15.29px; padding-left: 40px; padding-right: 43.07px; 
+    100% { padding-top: 12px; padding-bottom: 12px; padding-left: 40px; padding-right: 43.07px; 
         background-color: red; border-radius: 27.5px; margin-left: 5px; border: none; } /* font-size: 18px;*/
 }
 @keyframes changeFont {
@@ -253,23 +250,13 @@ header {
     100% { background-color: #D6E5DC; }
 }
 @keyframes addSpace {
-    100% { padding-top: 98px; padding-bottom: 98px; }
+    100% { padding-top: 48px; padding-bottom: 78px; }
 }
-
-
-
-
-/*Problem: Not working*/
-/* .button--hero:hover {
-    background-color: white;
-    color: white;
-    border: red solid 1px;
-} */
-
 
 /* -------------------- About Me ------------------ */
 .about {
-    background-color: white;
+    background-color: #EAEAEA;
+    padding-top: 48px;
 }
 .about__body p {
     margin-top: 44px;
@@ -283,8 +270,9 @@ header {
 
 /* -------------------- Projects ------------------ */
 .projects {
-    background-color: #EAEAEA;
+    /* background-color: #BDC581; */
     color: black;
+    padding-top: 48px;
 }
 .project {
     margin-top: 44px;
@@ -325,7 +313,7 @@ header {
 .image--projects {
     width: 303px;
     border-radius: 100px;
-    border: solid white 5px;
+    border: solid black 1px;
 }
 
 
