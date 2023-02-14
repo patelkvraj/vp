@@ -311,6 +311,14 @@ header {
     text-decoration: underline 1px red;
     text-underline-offset: 2px;
 }
+.github__vrajPatel span {
+    background-color: yellow;
+    text-decoration: none;
+}
+.warning__symbol--projects {
+    font-size: 12px;
+    margin-left: 3px;
+}
 .image--projects {
     width: 303px;
     border-radius: 100px;
