@@ -53,6 +53,11 @@ p {
 .text {
     font-family: 'Source Sans Pro', sans-serif;
 }
+.warning__symbol {
+    font-size: 12px;
+    margin-left: 3px;
+}
+
 
 /* ------------------------------------ HEADER ----------------------------------- */
 header {
@@ -297,6 +302,15 @@ header {
     font-size: 36px;
     color: black;
     line-height: 38px;
+    position: relative;
+    width: fit-content;
+}
+.heading--projects:hover .warning__symbol--projects--title {
+    visibility: visible;
+}
+.warning__symbol--projects--title {
+    position: absolute;
+    visibility: hidden;
 }
 .project__description {
     margin-top: 40.5px;
@@ -312,12 +326,7 @@ header {
     text-underline-offset: 2px;
 }
 .github__vrajPatel span {
-    background-color: yellow;
     text-decoration: none;
-}
-.warning__symbol--projects {
-    font-size: 12px;
-    margin-left: 3px;
 }
 .img__wrap {
     position: relative;
