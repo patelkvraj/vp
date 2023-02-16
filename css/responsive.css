@@ -58,7 +58,7 @@
 
 }
 
-@media only screen and (max-width: 610px) {
+@media only screen and (max-width: 650px) {
     .flex__container__outer--projects {
         flex-direction: column;
         row-gap: 50px;
