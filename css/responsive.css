@@ -37,7 +37,6 @@
     .nav__list__item {
         padding-top: 20px;
         padding-bottom: 20px;
-        /* background-color: yellow; */
     }
 
     .nav__list__item__ach {
@@ -57,4 +56,15 @@
         opacity: 0;
     }
 
+}
+
+@media only screen and (max-width: 610px) {
+    .flex__container__outer--projects {
+        flex-direction: column;
+        row-gap: 50px;
+    }
+
+    .flex__container__inner--projects {
+        border-right: none;
+    }
 }
