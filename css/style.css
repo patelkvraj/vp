@@ -28,15 +28,15 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: normal;
     font-size: 48px;
-    line-height: 56.5px;
     font-weight: 400px;
+    line-height: 35px;
 }
 .section__subTitle {
     font-family: 'Source Sans Pro', sans-serif;
 }
 .section {
-    padding-top: 78px;
-    padding-bottom: 78px;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 p {
     font-family: 'Source Sans Pro', sans-serif;
@@ -117,7 +117,7 @@ header {
     width: 100%;
 }
 .nav__list__item__ach:hover{
-    color: rgb(199, 199, 199);
+    opacity: 60%;
 }
 .nav__list__item__ach:hover .borderTop{
     width: 100%;
@@ -281,7 +281,6 @@ header {
 /* -------------------- About Me ------------------ */
 .about {
     background-color: #EAEAEA;
-    padding-top: 48px;
 }
 .about__body p {
     margin-top: 44px;
@@ -295,7 +294,6 @@ header {
 
 /* -------------------- Projects ------------------ */
 .projects {
-    /* background-color: #BDC581; */
     color: black;
     padding-top: 48px;
 }

@@ -14,7 +14,6 @@ function giveAlert() {
 document.getElementById("html__languageExperience--hero").innerHTML = languageExperience(2022, 1, 1);          // the date I started learning HTML
 document.getElementById("css__languageExperience--hero").innerHTML = languageExperience(2022, 1, 1);           // the date I started learning CSS
 document.getElementById("javaScript__languageExperience--hero").innerHTML = languageExperience(2022, 7, 1);    // the date I started learning JavaScript
-document.getElementById("CPlusPlus__languageExperience--hero").innerHTML = languageExperience(2020, 8, 1);     // the date I started learning C++
 
 // /*
 // Name            :   languageExperience()
