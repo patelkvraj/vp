@@ -81,9 +81,12 @@ header {
     display: flex;
     align-items: center;
 }
-.logo {
-    width: 10%;
-    height: 60%;
+.link__logo {
+    display: flex;
+    justify-content: center;
+}
+.logo:hover {
+    opacity: 70%;
 }
 .nav__list {
     width: 50%;
@@ -113,11 +116,12 @@ header {
 
     transition: all ease-in-out 250ms;
 }
-.borderTop:hover {
+/* .borderTop:hover {
+    opacity: 100%;
     width: 100%;
-}
+} */
 .nav__list__item__ach:hover{
-    opacity: 60%;
+    color: rgb(200, 200, 200);
 }
 .nav__list__item__ach:hover .borderTop{
     width: 100%;
