@@ -89,7 +89,12 @@ header {
     width: 50%;
     display: flex;
     justify-content: right;
+    padding: 0px;
+}
+.nav__list__item {
+    display: flex;
     align-items: center;
+    position: relative;
 }
 .nav__list__item__two {
     margin: 0 55px;
@@ -99,9 +104,23 @@ header {
     color: white;
     box-sizing: border-box;
 }
+.borderTop {
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    top: 0;
+    width: 0%;
+
+    transition: all ease-in-out 250ms;
+}
+.borderTop:hover {
+    width: 100%;
+}
 .nav__list__item__ach:hover{
-    text-decoration: underline red solid  2px;
-    text-underline-offset: 5px;
+    color: rgb(199, 199, 199);
+}
+.nav__list__item__ach:hover .borderTop{
+    width: 100%;
 }
 .burger {
     text-align: center;
