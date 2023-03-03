@@ -42,9 +42,6 @@ p {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: none;
 }
-.logo {
-    width: 63.93px;
-}
 .content__wrap {
     margin: 0px auto;
     width: 80%;
@@ -80,10 +77,17 @@ header {
     width: 50%;
     display: flex;
     align-items: center;
+    display: flex;
 }
 .link__logo {
+    width: 10%;
+    height: 60%;
     display: flex;
     justify-content: center;
+}
+.logo {
+    /* width: 63.93px; */
+    width: 100%;
 }
 .logo:hover {
     opacity: 70%;
