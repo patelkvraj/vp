@@ -398,13 +398,13 @@ header {
 }
 .section__title--contact {
     color: black;
+    margin-top: 5px;
 }
 .message__leaveAMessage {
     font-size: 18px;
-    line-height: 21px;
+    margin-bottom: 44px;
 }
 .form {
-    margin-top: 44px;
     padding: 0px;
 }
 .text--label--form {
