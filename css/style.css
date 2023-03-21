@@ -118,7 +118,7 @@ header {
     top: 0;
     width: 0%;
 
-    transition: all ease-in-out 250ms;
+    transition: all ease-out 250ms;
 }
 /* .borderTop:hover {
     opacity: 100%;
@@ -404,10 +404,10 @@ header {
     font-size: 18px;
     margin-bottom: 44px;
 }
-.form {
-    padding: 0px;
+fieldset {
+    border: none;
 }
-.text--label--form {
+.text__label--form {
     display: none;
 }
 .form__input {
@@ -427,7 +427,6 @@ header {
 ::placeholder {
     font-family: 'Source Sans Pro', sans-serif;
 }
-
 .button--contact {
     display: block;
     margin: 0px auto;
@@ -444,18 +443,32 @@ header {
     color: #2977C9;
     border: solid #2977C9 1px;
 }
-
 .lock__icon{
     font-size: 9px;
     position: relative;
     bottom: .5px;
     right: 2px;
 }
-
 .message__privacy {
     margin-top: 4px;
     margin: 0px;
     font-size: 12px;
+}
+
+/* ----------------------------------- SIDEBAR ----------------------------------- */
+.sidebar {
+    position: fixed;
+    top: 320px;
+}
+.linkedin {
+    background-color: #0288D1;
+    text-align: center;
+    width: 50px;
+
+    transition: all ease-out 200ms;
+}
+.linkedin:hover {
+    width: 65px;
 }
 
 /* ----------------------------------- FOOTER ----------------------------------- */
@@ -465,7 +478,7 @@ header {
     align-items: center;
     justify-content: center;
 }
-.message {
+.message--footer {
     color: white;
     font-size: 12px;
 }

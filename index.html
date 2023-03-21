@@ -71,17 +71,20 @@ __________________
                 <!-- Navigation Panel -->
                 <ul class="nav__list v-class-resp"> 
                     <li class="nav__list__item nav__list__item__one">
-                        <a class="nav__list__item__ach nav__list__item__two__ach" href="#about">About
+                        <a class="nav__list__item__ach nav__list__item__two__ach" href="#about">
+                            About
                             <div class="borderTop"></div>
                         </a>
                     </li>
                     <li class="nav__list__item nav__list__item__two">
-                        <a class="nav__list__item__ach nav__list__item__one__ach" href="#projects">Projects
+                        <a class="nav__list__item__ach nav__list__item__one__ach" href="#projects">
+                            Projects
                             <div class="borderTop"></div>
                         </a>
                     </li>
                     <li class="nav__list__item nav__list__item__three">
-                        <a class="nav__list__item__ach nav__list__item__three__ach" href="#contact">Contact
+                        <a class="nav__list__item__ach nav__list__item__three__ach" href="#contact">
+                            Contact
                             <div class="borderTop"></div>
                         </a>
                     </li>
@@ -91,7 +94,7 @@ __________________
                     <i class="fa-solid fa-bars" id="symbol--nav__list"></i> <!-- Used id for highest priority selection -->   
                 </div>
             </nav>
-        </header>
+        </header><!--end of header-->
 
         <!-------------------------------- MAIN CONTENT -------------------------------->
         <main class="main__content">
@@ -99,21 +102,32 @@ __________________
             <section class="section hero" id="home">
                 <div class="background--hero">
                     <div class="content__wrap content__wrap--hero">
-                        <h1 class="section__title section__title--hero">Hi, I'm <em class="name">Vraj Patel!</em></h1> 
-                        <h2 class="section__subTitle section__subTitle--hero"><em>Software Developer</em></h2>
+                        <h1 class="section__title section__title--hero">
+                            Hi, I'm<em class="name">Vraj Patel!</em>
+                        </h1> 
+                        <h2 class="section__subTitle section__subTitle--hero">
+                            <em>Software Developer</em>
+                        </h2>
                         <p class=" text languageExperience--hero">
                             <abbr title="HyperText Markup Language">HTML: </abbr><span id="html__languageExperience--hero">Time</span> year
                              /  <abbr title="Cascading Style Sheets">CSS: </abbr><span id="css__languageExperience--hero">Time</span> year
                              /  <abbr title="JavaScript">JS: </abbr><span id="javaScript__languageExperience--hero">Time</span> months  
                         </p> 
-                        <button class="button button--hero" onclick="document.location='#contact'"><span>HIRE ME!</span></button> 
+                        <button class="button button--hero" onclick="document.location='#contact'">
+                            <span>
+                                HIRE ME!
+                            </span>
+                        </button> 
                     </div>
                 </div>
-            </section>
+            </section><!--end of hero-->
+
             <!-------------------------------- About me -------------------------------->
             <section class="section about"  id="about">
                 <div class="content__wrap content__wrap--about">
-                    <h1 class="section__title section__title--about">This is me</h1>
+                    <h1 class="section__title section__title--about">
+                        This is me
+                    </h1>
                     <div class="about__body">
                         <p class="text text--about">
                             Vraj Patel <strong>has an associate degree in computer science</strong> from Middlesex Community College. 
@@ -127,7 +141,7 @@ __________________
                         </p>
                     </div>
                 </div>
-            </section>
+            </section><!--end of about-->
 
             <!-------------------------------- Projects -------------------------------->
             <section class="section projects" id="projects">
@@ -141,7 +155,7 @@ __________________
                                     <i class="fa-solid fa-up-right-from-square warning__symbol warning__symbol--projects--title"></i>
                                 </a>
                                 <p class="project__description project__one__description"> 
-                                    A personal <strong>website that contains my information and programming projects.</strong> 
+                                    A personal <strong>website which contains my information and programming projects.</strong> 
                                     <br><br>
                                     <strong>Key tools used: </strong><abbr title="HyperText Markup Language">HTML</abbr>, <abbr title="Cascading Style Sheets">CSS</abbr>, <abbr title="JavaScript">JS</abbr>, GitHub, Figma
                                     <br><br>
@@ -209,38 +223,74 @@ __________________
                         </div>
                     </div>
                 </div>
-            </section>
+            </section><!--end of projects-->
 
             <!-------------------------------- Contact -------------------------------->
             <section class="section contact"  id="contact">
                 <div class="content__wrap content__wrap--contact">
-                    <form class="form">
-                        <i class="fa-solid fa-envelope email__icon"></i>        <!-- email icon -->
-                        <h1 class="section__title section__title--contact">Connect With Me</h1>
-                        <p class="text message__leaveAMessage">Simply leave a message and I’ll get right back to you.</p>
-                         <!-- label/input 1 --> 
-                        <label class="form__label"><div class="text--label--form">Full name</div></label>
-                        <input aria-label="Full name" class="form__input form__input1" type="text" name="name" placeholder="Full name" required><br> 
-                        <!-- label/input 2 -->
-                        <label class="form__label"><div class="text--label--form">Phone number</div></label>
-                        <input class="form__input form__input2" type="number" name="phone number" placeholder="Phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10"><br>
-                        <!-- label/input 3 -->
-                        <label class="form__label"><div class="text--label--form">Email address</div></label>
-                        <input class="form__input form__input3" type="email" name="email" placeholder="Email address*" required><br>
-                        <!-- label/input 4 -->
-                        <label class="form__label"><div class="text--label--form">Your Message</div></label>                        
-                        <textarea class="form__input form__input4" name="message" placeholder="Your Message*" required></textarea> 
-                        <input class="button button--contact" type="submit" name="submit" value="Submit" onclick="giveAlert()">
-                        <p class="message__privacy"><i class="fa-solid fa-lock lock__icon"></i><!-- lock icon -->We never share your private data.</p>
+                    <form class="form" method="get">
+                        <i class="fa-solid fa-envelope email__icon"></i><!-- email icon -->
+                        <fieldset>
+                            <legend>
+                                <h1 class="section__title section__title--contact">
+                                    Connect With Me
+                                </h1>
+                            </legend>
+                            <p class="text message__leaveAMessage">
+                                Simply leave a message and I&#39;ll get right back to you.
+                            </p>
+                            <label class="form__label">
+                                <div class="text__label--form">
+                                    Name:
+                                </div>
+                                <input aria-label="Full name" class="form__input form__input1" type="text" name="name" placeholder="Name*" required>
+                            </label>
+                            <br> 
+                            <label class="form__label">
+                                <div class="text__label--form">
+                                    Phone number:
+                                </div>
+                                <input class="form__input form__input2" type="number" name="phone number" placeholder="Phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10">
+                            </label>
+                            <br>
+                            <label class="form__label">
+                                <div class="text__label--form">
+                                    Email:
+                                </div>
+                                <input class="form__input form__input3" type="email" name="email" placeholder="Email*" required>
+                            </label>
+                            <br>
+                            <label class="form__label" for="message">
+                                <div class="text__label--form">
+                                    Message:
+                                </div>
+                            </label>                        
+                            <textarea class="form__input form__input4" name="message" placeholder="Message*" required id="message"></textarea> 
+                            <br>
+                            <input class="button button--contact" type="submit" name="submit" value="Submit" onclick="giveAlert()">
+                            <p class="message__privacy">
+                                <i class="fa-solid fa-lock lock__icon"></i><!-- lock icon -->
+                                We never share your private data.
+                            </p>
+                        </fieldset>
                     </form>
                 </div>
-            </section>
+            </section><!--end of contact-->
         </main>
+
+        <!-------------------------------- SIDEBAR --------------------------------> 
+        <section class="sidebar">
+            <div class="linkedin">
+                <a href="https://www.linkedin.com/in/vraj01/" target="_blank">
+                    <img src="img/Icons/linkedin-icon.svg">
+                </a>
+            </div>
+        </section><!--end of sidebar-->
 
         <!-------------------------------- FOOTER --------------------------------> 
          <footer class="footer">
-            <p class="message">Copyright &copy; 2022. Vraj Patel. All rights reserved.</p>
-        </footer>
+            <p class="message message--footer">Copyright &copy; 2022. Vraj Patel. All rights reserved.</p>
+        </footer><!--end of footer-->
 
          <!---------------------------------------------------------- JavaScipt ---------------------------------------------------------->
          <script src="js/script.js"></script>
