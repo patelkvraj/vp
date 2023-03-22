@@ -104,7 +104,7 @@ __________________
                 <div class="background--hero">
                     <div class="content__wrap content__wrap--hero">
                         <h1 class="section__title section__title--hero">
-                            Hi, I'm<em class="name">Vraj Patel!</em>
+                            Hi, I'm <em class="name">Vraj Patel!</em>
                         </h1> 
                         <h2 class="section__subTitle section__subTitle--hero">
                             <em>Software Developer</em>
@@ -279,12 +279,16 @@ __________________
             </section><!--end of contact-->
         </main>
 
-        <!-------------------------------- SIDEBAR --------------------------------> 
-        <section class="sidebar">
-            <div class="linkedin">
-                <a href="https://www.linkedin.com/in/vraj01/" target="_blank">
-                    <img src="img/Icons/linkedin-icon.svg">
-                </a>
+        <!-------------------------------- SIDEBAR -------------------------------->
+        <section class="side__navigation">
+            <i class="fa-solid fa-caret-right icon__right__arrow" id="right__arrow" onclick=addSidebar()></i>
+            <div class="sidebar" id="social__media">
+                <div class="linkedin">
+                    <a href="https://www.linkedin.com/in/vraj01/" target="_blank">
+                        <img src="img/Icons/linkedin-icon.svg">
+                    </a>
+                </div>
+                <i class="fa-sharp fa-solid fa-caret-left icon__left__arrow" onclick=removeSidebar()></i>
             </div>
         </section><!--end of sidebar-->
 

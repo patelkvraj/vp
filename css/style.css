@@ -456,9 +456,24 @@ fieldset {
 }
 
 /* ----------------------------------- SIDEBAR ----------------------------------- */
+.icon__right__arrow{
+    position: fixed;
+    top: 320px;
+    z-index: 2;
+    visibility: hidden;
+    opacity: 20%;
+    font-size: 22px;
+    left: 5px;
+}
 .sidebar {
     position: fixed;
     top: 320px;
+    display: flex;
+    flex-direction: column;
+    width: 45px;
+}
+.sidebar:hover .icon__left__arrow{
+    visibility: visible;
 }
 .linkedin {
     background-color: #0288D1;
@@ -469,6 +484,12 @@ fieldset {
 }
 .linkedin:hover {
     width: 65px;
+}
+.icon__left__arrow{
+    text-align: right;
+    visibility: hidden;
+    opacity: 20%;
+    font-size: 22px;
 }
 
 /* ----------------------------------- FOOTER ----------------------------------- */

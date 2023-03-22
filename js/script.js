@@ -44,3 +44,27 @@ function languageExperience(year, month, day){
         return years_experience;    
     }
 }
+
+// /*
+// Name            :   removeSidebar()
+// Purpose         :   Removes the sidebar when a user clicks
+// Input           :   n/a
+// Output          :   n/a
+// Function call   :   index.html 
+// */
+function removeSidebar(){
+    document.getElementById("social__media").style.left = "-50px";
+    document.getElementById("right__arrow").style.visibility = "visible";
+}
+
+// /*
+// Name            :   addSidebar()
+// Purpose         :   Adds the sidebar when a user clicks
+// Input           :   n/a
+// Output          :   n/a
+// Function call   :   index.html
+// */
+function addSidebar(){
+    document.getElementById("social__media").style.left = "0px";
+    document.getElementById("right__arrow").style.visibility = "hidden";
+}
