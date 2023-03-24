@@ -68,3 +68,16 @@ function addSidebar(){
     document.getElementById("social__media").style.left = "0px";
     document.getElementById("right__arrow").style.visibility = "hidden";
 }
+
+// /*
+// Name            :   setTimeout()
+// Purpose         :   Displays the sidebar
+// Input           :   A function with CSS property, time in milliseconds 
+// Output          :   n/a
+// Function call   :   script.js
+// */
+setTimeout(function(){
+    document.getElementById("side__navigation").style.left = "0px";
+}, 5000);
+
+

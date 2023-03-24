@@ -456,14 +456,22 @@ fieldset {
 }
 
 /* ----------------------------------- SIDEBAR ----------------------------------- */
+.side__navigation {
+    position: fixed;
+    top: 320px;
+    left: -50px;
+
+    transition: all ease-in-out 50ms;
+}
 .icon__right__arrow{
     position: fixed;
     top: 320px;
-    z-index: 2;
     visibility: hidden;
     opacity: 20%;
     font-size: 22px;
     left: 5px;
+
+    transition-delay: 250ms;
 }
 .sidebar {
     position: fixed;
@@ -471,6 +479,8 @@ fieldset {
     display: flex;
     flex-direction: column;
     width: 45px;
+
+    transition: all ease-in-out 50ms;
 }
 .sidebar:hover .icon__left__arrow{
     visibility: visible;
