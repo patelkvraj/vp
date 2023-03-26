@@ -53,7 +53,7 @@ function languageExperience(year, month, day){
 // Function call   :   index.html 
 // */
 function removeSidebar(){
-    document.getElementById("social__media").style.left = "-50px";
+    document.getElementById("social__media").style.left = "-60px";
     document.getElementById("right__arrow").style.visibility = "visible";
 }
 

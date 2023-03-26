@@ -459,7 +459,7 @@ fieldset {
 .side__navigation {
     position: fixed;
     top: 320px;
-    left: -50px;
+    left: -70px;
 
     transition: all ease-in-out 50ms;
 }
@@ -478,22 +478,42 @@ fieldset {
     top: 320px;
     display: flex;
     flex-direction: column;
-    width: 45px;
-
+    width: 50px;
+    
     transition: all ease-in-out 50ms;
 }
 .sidebar:hover .icon__left__arrow{
     visibility: visible;
 }
-.linkedin {
-    background-color: #0288D1;
+.social__media {
     text-align: center;
-    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+}
+.social__media:hover {
+    width: 57px;
+}
+.linkedin{
+    background-color: #0288D1;
 
     transition: all ease-out 200ms;
 }
-.linkedin:hover {
-    width: 65px;
+.social__media__icon__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social__media__icon {
+    width: 40px;
+}
+.github{
+    background-color: black;
+    padding: 10px 3px;
+}
+.social__media__icon__github {
+    width: 30px;
 }
 .icon__left__arrow{
     text-align: right;
@@ -501,6 +521,7 @@ fieldset {
     opacity: 20%;
     font-size: 22px;
 }
+
 
 /* ----------------------------------- FOOTER ----------------------------------- */
 .footer {
