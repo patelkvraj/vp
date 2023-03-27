@@ -1,6 +1,6 @@
 /*
-GitHub Commit: 
-                Button selector: i added a cursor pointer. 
+GitHub Commit:
+                Button selector: i added a cursor pointer.
 */
 
 * {
@@ -265,10 +265,10 @@ header {
 @keyframes changeButton {
     5% { margin-left: 5px; }
     45% { padding-top: 12px; padding-bottom: 12px; padding-left: 40px; padding-right: 43.07px; } /* font-size: 18px;*/
-    85% { 
-        padding-top: 12px; padding-bottom: 12px; padding-left: 40px; padding-right: 43.07px; 
+    85% {
+        padding-top: 12px; padding-bottom: 12px; padding-left: 40px; padding-right: 43.07px;
         background-color: red; border-radius: 27.5px; margin-left: 5px; } /* font-size: 18px;*/
-    100% { padding-top: 12px; padding-bottom: 12px; padding-left: 40px; padding-right: 43.07px; 
+    100% { padding-top: 12px; padding-bottom: 12px; padding-left: 40px; padding-right: 43.07px;
         background-color: red; border-radius: 27.5px; margin-left: 5px; border: none; } /* font-size: 18px;*/
 }
 @keyframes changeFont {
@@ -458,12 +458,12 @@ fieldset {
 /* ----------------------------------- SIDEBAR ----------------------------------- */
 .side__navigation {
     position: fixed;
-    top: 320px;
+    /* top: 400px; */
     left: -70px;
 }
 .icon__right__arrow{
     position: fixed;
-    top: 320px;
+    top: 400px;
     visibility: hidden;
     opacity: 20%;
     font-size: 22px;
@@ -473,10 +473,10 @@ fieldset {
 }
 .sidebar {
     position: fixed;
-    top: 320px;
+    top: 400px;
     display: flex;
     flex-direction: column;
-    width: 50px;    
+    width: 50px;
 }
 .sidebar:hover .icon__left__arrow{
     visibility: visible;
@@ -522,7 +522,7 @@ fieldset {
 
 /* ----------------------------------- FOOTER ----------------------------------- */
 .footer {
-    background-color: #353535; 
+    background-color: #353535;
     display: flex;
     align-items: center;
     justify-content: center;
