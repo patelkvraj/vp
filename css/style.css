@@ -460,8 +460,6 @@ fieldset {
     position: fixed;
     top: 320px;
     left: -70px;
-
-    transition: all ease-in-out 50ms;
 }
 .icon__right__arrow{
     position: fixed;
@@ -478,9 +476,7 @@ fieldset {
     top: 320px;
     display: flex;
     flex-direction: column;
-    width: 50px;
-    
-    transition: all ease-in-out 50ms;
+    width: 50px;    
 }
 .sidebar:hover .icon__left__arrow{
     visibility: visible;
@@ -491,14 +487,15 @@ fieldset {
     justify-content: center;
     align-items: center;
     padding: 3px;
+    width: 50px;
+
+    transition: width ease-in-out 100ms;
 }
 .social__media:hover {
-    width: 57px;
+    width: 60px;
 }
 .linkedin{
     background-color: #0288D1;
-
-    transition: all ease-out 200ms;
 }
 .social__media__icon__link {
     display: flex;
