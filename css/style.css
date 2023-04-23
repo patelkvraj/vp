@@ -458,7 +458,6 @@ fieldset {
 /* ----------------------------------- SIDEBAR ----------------------------------- */
 .side__navigation {
     position: fixed;
-    /* top: 400px; */
     left: -70px;
 }
 .icon__right__arrow{
