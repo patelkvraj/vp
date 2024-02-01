@@ -42,7 +42,7 @@ function addSidebar(){
 // Function call   :   script.js
 // */
 setTimeout(function(){
-    document.getElementById("side__navigation").style.left = "0px";
+    addSidebar();
     playSound();
 }, 5000);
 
