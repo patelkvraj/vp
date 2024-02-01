@@ -43,20 +43,7 @@ function addSidebar(){
 // */
 setTimeout(function(){
     addSidebar();
-    playSound();
 }, 5000);
 
-
-// /*
-// Name            :   playSound()
-// Purpose         :   Play pop up sound for the sidebar appearance.
-// Input           :   n/a 
-// Output          :   n/a
-// Function call   :   index.html
-// */
-function playSound() {
-    var x = document.getElementById("audio");
-    x.play();
-}
 
 
