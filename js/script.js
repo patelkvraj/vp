@@ -32,7 +32,6 @@ function removeSidebar(){
 function addSidebar(){
     document.getElementById("social__media").style.left = "0px";
     document.getElementById("right__arrow").style.visibility = "hidden";
-    // playSound();
 }
 
 // /*
@@ -44,14 +43,20 @@ function addSidebar(){
 // */
 setTimeout(function(){
     document.getElementById("side__navigation").style.left = "0px";
+    playSound();
 }, 5000);
 
-/*Play pop up sound*/
-// function playSound() {
-//     let myAudio = document.querySelector('#audio')
-//     myAudio.play()
-// }
 
-
+// /*
+// Name            :   playSound()
+// Purpose         :   Play pop up sound for the sidebar appearance.
+// Input           :   n/a 
+// Output          :   n/a
+// Function call   :   index.html
+// */
+function playSound() {
+    var x = document.getElementById("audio");
+    x.play();
+}
 
 
