@@ -46,4 +46,8 @@ setTimeout(function(){
 }, 5000);
 
 
+// function changeButton() {
+//     // Hire Me button
+//     const button_hire_me = document.getElementById("button--hireMe");
+// }
 
