@@ -137,6 +137,9 @@ header {
     right: 5%;
     cursor: pointer;
 }
+.burger:hover {
+    opacity: 70%;
+}
 #symbol--nav__list {
     color: white;
     display: none;
