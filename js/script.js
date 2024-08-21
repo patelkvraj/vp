@@ -51,3 +51,12 @@ setTimeout(function(){
 //     const button_hire_me = document.getElementById("button--hireMe");
 // }
 
+
+/*
+Change the copyright year
+*/
+const d = new Date();
+let year = d.getFullYear();
+const copyright__year = document.getElementById("copyright__year");
+copyright__year.innerHTML = year;
+
