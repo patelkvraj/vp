@@ -236,6 +236,11 @@ header {
     animation-delay: 12s;
     animation-fill-mode: both;
 }
+
+.button--hero:hover {
+    font-weight: bold;
+}
+
 .button--hero span {
     animation-name: changeFont;
     animation-duration: 2s;
@@ -531,9 +536,5 @@ fieldset {
 .message--footer {
     color: white;
     font-size: 12px;
-}
-
-.section__title--hero:hover {
-    background-color: yellow;
 }
 
