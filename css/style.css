@@ -533,3 +533,7 @@ fieldset {
     font-size: 12px;
 }
 
+.section__title--hero:hover {
+    background-color: yellow;
+}
+
