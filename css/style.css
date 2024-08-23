@@ -401,8 +401,20 @@ header {
     background-color: #EAB543;
     position: relative;
 }
+.contact:hover .envelope_close {
+    display: none !important;
+}
+.contact:hover .envelope_open {
+    display: inline !important;
+}
 .email__icon {
     font-size: 60px;
+}
+.envelope_open {
+    display: none !important;
+}
+.envelope_open_text {
+    display: none !important;
 }
 .section__title--contact {
     color: black;
