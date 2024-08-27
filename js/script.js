@@ -71,3 +71,4 @@ function changeEnvelope() {
     envelope_open_text = document.getElementById("envelope_open_text");
     envelope_open_text.setAttribute('style', 'display:none !important');
 }
+
