@@ -63,12 +63,12 @@ copyright__year.innerHTML = year;
 /*
 Purpose: Change the envelope
 */
-function changeEnvelope() {
-    envelope_open = document.getElementById("envelope_open");
-    envelope_open.setAttribute('style', 'display:none !important');
-    envelope_open_text = document.getElementById("envelope_open_text");
-    envelope_open_text.setAttribute('style', 'display:inline !important');
-    envelope_open_text = document.getElementById("envelope_open_text");
-    envelope_open_text.setAttribute('style', 'display:none !important');
-}
+// function changeEnvelope() {
+//     envelope_open = document.getElementById("envelope_open");
+//     envelope_open.setAttribute('style', 'display:none !important');
+//     envelope_open_text = document.getElementById("envelope_open_text");
+//     envelope_open_text.setAttribute('style', 'display:inline !important');
+//     envelope_open_text = document.getElementById("envelope_open_text");
+//     envelope_open_text.setAttribute('style', 'display:none !important');
+// }
 
