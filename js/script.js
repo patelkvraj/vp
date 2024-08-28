@@ -60,15 +60,24 @@ let year = d.getFullYear();
 const copyright__year = document.getElementById("copyright__year");
 copyright__year.innerHTML = year;
 
+
 /*
 Purpose: Change the envelope
 */
-// function changeEnvelope() {
-//     envelope_open = document.getElementById("envelope_open");
-//     envelope_open.setAttribute('style', 'display:none !important');
-//     envelope_open_text = document.getElementById("envelope_open_text");
-//     envelope_open_text.setAttribute('style', 'display:inline !important');
-//     envelope_open_text = document.getElementById("envelope_open_text");
-//     envelope_open_text.setAttribute('style', 'display:none !important');
-// }
+function changeEnvelope() {
+    // Hide the Envelope Open icon
+    envelope_open = document.getElementById("envelope_open");
+    envelope_open.setAttribute('style', 'display:none !important');
+    // Hide the Envelope Open Text icon
+    envelope_open_text = document.getElementById("envelope_open_text");
+    envelope_open_text.setAttribute('style', 'display:inline !important');
+    envelope_close = document.getElementById("envelope_close");
+    input_first = document.getElementById("name_input");
+    if (input_first.value == "") {
+        envelope_open_text.setAttribute('style', 'display:none !important');
+        envelope_close.setAttribute('style', 'display:none !important');
+        envelope_open.setAttribute('style', 'display:inline !important');
+    }
+}
+
 
