@@ -77,6 +77,25 @@ function changeEnvelope() {
         envelope_open_text.setAttribute('style', 'display:none !important');
         envelope_close.setAttribute('style', 'display:none !important');
         envelope_open.setAttribute('style', 'display:inline !important');
+        }
+        
+}
+
+function resetEnvelope(){
+    envelope_open = document.getElementById("envelope_open");
+    envelope_open_text = document.getElementById("envelope_open_text");
+    envelope_close = document.getElementById("envelope_close");
+    // If the envelope has the paper
+    if (envelope_open_text.getAttribute('style') == "display:inline !important") {
+        // Hide the close envelope icon
+        envelope_close.setAttribute('style', 'display:none !important');
+    }
+    // If the envelope is open
+    if (envelope_open.getAttribute('style') == "display:inline !important") {
+        // Hide the open envelope icon
+        envelope_open.setAttribute('style', 'display:none');
+        // Bring back the close envelope icon
+        envelope_close.setAttribute('style', 'display:inline');
     }
 }
 
