@@ -410,6 +410,10 @@ header {
 .email__icon {
     font-size: 60px;
 }
+.envelope_close {
+    position: relative;
+    top: 7.5px;
+}
 .envelope_open {
     display: none !important;
 }
