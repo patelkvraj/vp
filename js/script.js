@@ -64,7 +64,7 @@ copyright__year.innerHTML = year;
 /*
 Purpose: Change the envelope
 */
-function changeEnvelope(id) {
+function changeEnvelope() {
     // Hide the Envelope Open icon
     envelope_open = document.getElementById("envelope_open");
     envelope_open.setAttribute('style', 'display:none !important');
@@ -72,8 +72,11 @@ function changeEnvelope(id) {
     envelope_open_text = document.getElementById("envelope_open_text");
     envelope_open_text.setAttribute('style', 'display:inline !important');
     envelope_close = document.getElementById("envelope_close");
-    input = document.getElementById(id);
-    if (input.value == "") {
+    name_input = document.getElementById("name_input");
+    phone_number_input = document.getElementById("phone_number_input");
+    email_input = document.getElementById("email_input");
+    message_input = document.getElementById("message_input");
+    if (name_input.value == "" && phone_number_input.value == "" && email_input.value == "" && message_input.value == "") {
         envelope_open_text.setAttribute('style', 'display:none !important');
         envelope_close.setAttribute('style', 'display:none !important');
         envelope_open.setAttribute('style', 'display:inline !important');
