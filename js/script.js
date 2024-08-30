@@ -64,7 +64,7 @@ copyright__year.innerHTML = year;
 /*
 Purpose: Change the envelope
 */
-function changeEnvelope() {
+function changeEnvelope(id) {
     // Hide the Envelope Open icon
     envelope_open = document.getElementById("envelope_open");
     envelope_open.setAttribute('style', 'display:none !important');
@@ -72,12 +72,12 @@ function changeEnvelope() {
     envelope_open_text = document.getElementById("envelope_open_text");
     envelope_open_text.setAttribute('style', 'display:inline !important');
     envelope_close = document.getElementById("envelope_close");
-    input_first = document.getElementById("name_input");
-    if (input_first.value == "") {
+    input = document.getElementById(id);
+    if (input.value == "") {
         envelope_open_text.setAttribute('style', 'display:none !important');
         envelope_close.setAttribute('style', 'display:none !important');
         envelope_open.setAttribute('style', 'display:inline !important');
-        }
+    }
         
 }
 
