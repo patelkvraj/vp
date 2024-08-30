@@ -207,14 +207,14 @@
                                 <div class="text__label--form">
                                     Phone number:
                                 </div>
-                                <input class="form__input form__input2" type="number" name="phone number" placeholder="Phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10">
+                                <input id="phone_number_input" class="form__input form__input2" oninput="changeEnvelope(id)" type="number" name="phone number" placeholder="Phone number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" maxlength="10">
                             </label>
                             <br>
                             <label class="form__label">
                                 <div class="text__label--form">
                                     Email:
                                 </div>
-                                <input class="form__input form__input3" type="email" name="email" placeholder="Email*" required>
+                                <input id="email_input" class="form__input form__input3" oninput="changeEnvelope(id)" type="email" name="email" placeholder="Email*" required>
                             </label>
                             <br>
                             <label class="form__label" for="message">
@@ -222,7 +222,7 @@
                                     Message:
                                 </div>
                             </label>                        
-                            <textarea class="form__input form__input4" name="message" placeholder="Message*" required id="message"></textarea> 
+                            <textarea id="message_input" class="form__input form__input4" oninput="changeEnvelope(id)" name="message" placeholder="Message*" required id="message"></textarea> 
                             <br>
                             <input class="button button--contact" type="submit" name="submit" value="Submit" onclick="giveAlert()">
                             <p class="message__privacy">
