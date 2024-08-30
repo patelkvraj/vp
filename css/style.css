@@ -416,6 +416,9 @@ header {
 .envelope_open_text {
     display: none !important;
 }
+.airplane__mail {
+    font-size: 60px;
+}
 .section__title--contact {
     color: black;
     margin-top: 5px;
