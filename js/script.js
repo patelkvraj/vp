@@ -102,4 +102,16 @@ function resetEnvelope(){
     }
 }
 
-
+/*
+Name            :   PlaneFly()
+Purpose         :   When the user hits the submit (mail) button, the plane takes off.
+Input           :   n/a
+Output          :   n/a
+Function call   :   index.html
+*/
+function PlaneFly() {
+    // Reduce the size of the mail icon
+    // Move "up" the mail icon
+    // Display the plane icon
+    // Fly the plane across/up the web page
+}

@@ -422,6 +422,7 @@ header {
 }
 .airplane__mail {
     font-size: 60px;
+    display: none !important;
 }
 .section__title--contact {
     color: black;
