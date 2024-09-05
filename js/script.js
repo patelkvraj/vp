@@ -112,7 +112,8 @@ Input           :   n/a
 Output          :   n/a
 Function call   :   index.html
 */
-function planeFly() {
+function planeFly(event) {
+  event.preventDefault();
   // Reduce the size of the mail icon
   // Move "up" the mail icon
   // Display the plane icon
