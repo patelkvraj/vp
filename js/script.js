@@ -112,10 +112,32 @@ Input           :   n/a
 Output          :   n/a
 Function call   :   index.html
 */
+let id = null;
 function planeFly(event) {
-  event.preventDefault();
+  event.preventDefault(); //  Prevent the default behavior of the event.
+
+  // Change the envelope icon to close.
   // Reduce the size of the mail icon
   // Move "up" the mail icon
   // Display the plane icon
   // Fly the plane across/up the web page
+
+  const plane = document.getElementById("airplane__mail");
+  plane.setAttribute("style", "display:inline !important");
+  plane.style.position = "absolute";
+  let pos = 0;
+  clearInterval(id);
+  id = setInterval(frame, 15);
+  function frame() {
+    if (pos == 1000) {
+      clearInterval(id);
+    } else if (pos == 500) {
+      plane.style.top = pos + "px";
+      plane.style.left = pos - "px";
+    } else {
+      pos++;
+      plane.style.top = pos + "px";
+      plane.style.left = pos + "px";
+    }
+  }
 }
