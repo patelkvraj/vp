@@ -1,0 +1,8 @@
+.form__input:focus {
+  outline: none;
+  border: 2.5px solid red;
+}
+
+.form__input2:focus {
+  border: 2.5px solid black;
+}
