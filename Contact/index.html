@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="author" content="Vraj Patel" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact - Vraj Patel Portfolio</title>
+    <link rel="icon" type="image/svg" href="../img/logo-VP.svg" />
+
+    <!---------------------------------------------------------- CSS ---------------------------------------------------------->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,700;1,700&family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-------------------------------- HEADER -------------------------------->
+    <header class="header">
+      <nav class="nav h-nav-resp">
+        <!-- Logo --->
+        <div class="container--logo v-class-resp" role="logo">
+          <a class="link__logo" href="../">
+            <img
+              class="logo"
+              src="../img/logo-VP.svg"
+              width="100px"
+              alt="Logo of the website."
+            />
+          </a>
+        </div>
+        <!-- Navigation Panel -->
+        <ul class="nav__list v-class-resp">
+          <li class="nav__list__item nav__list__item__one">
+            <a
+              class="nav__list__item__ach nav__list__item__two__ach"
+              href="../"
+            >
+              About
+              <div class="borderTop"></div>
+            </a>
+          </li>
+          <li class="nav__list__item nav__list__item__two">
+            <a
+              class="nav__list__item__ach nav__list__item__one__ach"
+              href="../Projects/"
+            >
+              Projects
+              <div class="borderTop"></div>
+            </a>
+          </li>
+          <li class="nav__list__item nav__list__item__three">
+            <a
+              class="nav__list__item__ach nav__list__item__three__ach"
+              href="../contact"
+            >
+              Contact
+              <div class="borderTop"></div>
+            </a>
+          </li>
+        </ul>
+        <!-- Burger -->
+        <div class="burger">
+          <i class="fa-solid fa-bars" id="symbol--nav__list"></i>
+          <!-- Used id for highest priority selection -->
+        </div>
+      </nav>
+    </header>
+    <!--end of header-->
+    <section
+      class="section contact"
+      id="contact"
+      onmouseleave="resetEnvelope()"
+    >
+      <div class="content__wrap content__wrap--contact">
+        <form
+          action="https://formspree.io/f/xnndbwkg"
+          id="form"
+          class="form"
+          method="post"
+        >
+          <i
+            id="envelope_close"
+            class="fa-solid fa-envelope email__icon envelope_close"
+          ></i
+          ><!-- email icon -->
+          <i
+            id="envelope_open"
+            class="fa-solid fa-envelope-open email__icon envelope_open"
+          ></i>
+          <i
+            id="envelope_open_text"
+            class="fa-solid fa-envelope-open-text email__icon envelope_open_text"
+          ></i>
+          <i
+            id="airplane__mail"
+            class="fa-regular fa-paper-plane airplane__mail"
+          ></i>
+          <fieldset>
+            <legend>
+              <h1 class="section__title section__title--contact">
+                Connect With Me
+              </h1>
+            </legend>
+            <p class="text message__leaveAMessage">
+              Simply leave a message and I&#39;ll get right back to you.
+            </p>
+            <label class="form__label">
+              <div class="text__label--form">Name:</div>
+              <input
+                id="name_input"
+                class="form__input form__input1"
+                oninput="changeEnvelope()"
+                aria-label="Full name"
+                type="text"
+                name="name"
+                placeholder="Name*"
+                required
+              />
+            </label>
+            <br />
+            <label class="form__label">
+              <div class="text__label--form">Phone number:</div>
+              <input
+                id="phone_number_input"
+                class="form__input form__input2"
+                oninput="changeEnvelope()"
+                type="number"
+                name="phone number"
+                placeholder="Phone number"
+                pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                maxlength="10"
+              />
+            </label>
+            <br />
+            <label class="form__label">
+              <div class="text__label--form">Email:</div>
+              <input
+                id="email_input"
+                class="form__input form__input3"
+                oninput="changeEnvelope()"
+                type="email"
+                name="email"
+                placeholder="Email*"
+                required
+              />
+            </label>
+            <br />
+            <label class="form__label" for="message">
+              <div class="text__label--form">Message:</div>
+            </label>
+            <textarea
+              id="message_input"
+              class="form__input form__input4"
+              oninput="changeEnvelope()"
+              name="message"
+              placeholder="Message*"
+              required
+              id="message"
+            ></textarea>
+            <br />
+            <input
+              class="button button--contact"
+              type="submit"
+              name="submit"
+              value="Submit"
+            />
+            <p class="message__privacy">
+              <i class="fa-solid fa-lock lock__icon"></i
+              ><!-- lock icon -->
+              We never share your private data.
+            </p>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+    <!--end of contact-->
+    <!-------------------------------- FOOTER -------------------------------->
+    <footer class="footer">
+      <p class="message message--footer">
+        Copyright &copy; <span id="copyright__year">2022</span>. Vraj Patel. All
+        rights reserved.
+      </p>
+    </footer>
+    <!--end of footer-->
+    <!---------------------------------------------------------- JavaScipt ---------------------------------------------------------->
+    <!-- FONT -->
+    <script
+      src="https://kit.fontawesome.com/771d1fbba5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/script.js" defer></script>
+    <script src="../js/resp.js" defer></script>
+  </body>
+</html>
