@@ -23,16 +23,15 @@ function addSidebar() {
   document.getElementById("right__arrow").style.visibility = "hidden";
 }
 
-// /*
-// Name            :   setTimeout()
-// Purpose         :   Displays the sidebar
-// Input           :   A function with CSS property, time in milliseconds
-// Output          :   n/a
-// Function call   :   script.js
-// */
-setTimeout(function () {
-  addSidebar();
-}, 5000);
+/* Only add sidebar if it's the home page */
+let currentPage = window.location.href;
+if (
+  !(currentPage.endsWith("/projects/") || currentPage.endsWith("/contact/"))
+) {
+  setTimeout(function () {
+    addSidebar();
+  }, 5000);
+}
 
 // function changeButton() {
 //     // Hire Me button
