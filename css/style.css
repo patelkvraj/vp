@@ -55,6 +55,11 @@ p {
   margin-left: 3px;
 }
 
+.page {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
 /* ------------------------------------ HEADER ----------------------------------- */
 header {
   width: 100%;
