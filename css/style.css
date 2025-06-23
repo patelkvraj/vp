@@ -106,9 +106,7 @@ header {
   display: flex;
   align-items: center;
   position: relative;
-}
-.nav__list__item__two {
-  margin: 0 55px;
+  margin-left: 55px;
 }
 .nav__list__item__ach {
   text-decoration: none;
@@ -546,6 +544,11 @@ fieldset {
   margin-top: 4px;
   margin: 0px;
   font-size: 12px;
+}
+
+/* -------------------- Projects ------------------ */
+.blog {
+  background-color: #cef7f7;
 }
 
 /* ----------------------------------- SIDEBAR ----------------------------------- */
