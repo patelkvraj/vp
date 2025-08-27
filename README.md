@@ -1,6 +1,6 @@
 # Personal Website
 
-- **Link**: https://patelkvraj.github.io/vp/
+- **Link**: https://www.vrajkpatel.com/
 - Created on: 6/13/2022
 
 ## Contact
