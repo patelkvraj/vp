@@ -1,12 +1,15 @@
-# Personal Website
+# Vraj K. Patel — Personal Website
 
-- **Link**: https://www.vrajkpatel.com/
-- Created on: 6/13/2022
+- **Website:** [vrajkpatel.com](https://www.vrajkpatel.com/)
+- **Created:** June 13, 2022
 
 ## Contact
 
-Name: Vraj K. Patel
+**Email:** [Contact via website](https://www.vrajkpatel.com/contact/)  
+**GitHub:** [patelkvraj](https://github.com/patelkvraj)
 
 ## About
 
-- My name is Vraj Patel, and this is my personal website. It's a good design and responsive website coded using HTML, CSS, and JavaScript.
+Welcome to my personal website! I built this site to showcase my work, share my interests, and connect with others. The site features a modern, responsive design and is developed using HTML, CSS, and JavaScript.
+
+Feel free to explore and reach out if you'd like to collaborate or learn more.
