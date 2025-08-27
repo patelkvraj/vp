@@ -38,6 +38,7 @@
   .nav__list__item {
     padding-top: 20px;
     padding-bottom: 20px;
+    margin-left: 0px;
   }
 
   .nav__list__item__ach {
