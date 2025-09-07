@@ -6,3 +6,7 @@
 .form__input2:focus {
   border: 2.5px solid black;
 }
+
+.content__wrap--contact form fieldset legend {
+  margin: 0px auto;
+}
