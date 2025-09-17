@@ -1,3 +1,7 @@
+section.blog div.content__wrap p.tagline {
+  margin-bottom: 4rem;
+}
+
 .blog-list {
   display: flex;
   flex-direction: column;
