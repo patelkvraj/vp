@@ -1,0 +1,30 @@
+article {
+    text-align: left;
+}
+
+article h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+article p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+article h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+article a.blog-post-readmore {
+  color: inherit;
+  border: 1px solid #888;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+}
+article a.blog-post-readmore:hover {
+  border: 1px solid black;
+}
