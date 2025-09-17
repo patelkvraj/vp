@@ -11,18 +11,13 @@ section.blog div.content__wrap p.tagline {
 
 .blog-post {
   background: #fff;
-  border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0,0,0,0.07);
   padding: 2rem 2.5rem;
   max-width: 600px;
   width: 100%;
-  text-align: left;
-  transition: transform 0.2s, box-shadow 0.2s;
-  border-left: 6px solid #2977c9;
 }
 .blog-post-title {
   font-size: 2rem;
-  color: #2977c9;
   margin-bottom: 0.3rem;
 }
 .blog-post-date {
@@ -36,16 +31,15 @@ section.blog div.content__wrap p.tagline {
   margin-bottom: 1.2rem;
 }
 .blog-post-readmore {
-  color: #fff;
-  background: #2977c9;
+  color: inherit;
+  border: 1px solid #888;
   padding: 0.5rem 1.2rem;
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
-  transition: background 0.2s;
 }
 .blog-post-readmore:hover {
-  background: #165a96;
+  border: 1px solid black;
 }
 
 @media (max-width: 700px) {
