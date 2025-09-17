@@ -16,10 +16,6 @@
   transition: transform 0.2s, box-shadow 0.2s;
   border-left: 6px solid #2977c9;
 }
-.blog-post:hover {
-  transform: translateY(-4px) scale(1.02);
-  box-shadow: 0 6px 24px rgba(41,119,201,0.12);
-}
 .blog-post-title {
   font-size: 2rem;
   color: #2977c9;
