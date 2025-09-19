@@ -1,3 +1,7 @@
+.tagline {
+  margin-bottom: 2rem;
+}
+
 .blog-list {
   display: flex;
   flex-direction: column;
